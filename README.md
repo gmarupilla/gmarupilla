@@ -44,10 +44,7 @@ I build scalable scientific and geospatial software systems that support climate
 ## Open-Source Research Software
 
 - **TerraFlow-Agro** – Reproducible geospatial modeling workflow (submitted to JOSS)  
-- **TrialFlow-Agro** – Bayesian diagnostics toolkit for agricultural field-trial analytics  
-- **ExplainFlow** – Explainability and model auditing framework  
-- **GeoVizFlow** – Tools for reproducible geospatial visualization  
-- **Computational Modeling Suite** – Unified scientific workflow and container ecosystem
+- **TrialFlow-Agro** – Bayesian diagnostics toolkit for agricultural field-trial analytics
 
 All projects emphasize reproducibility, transparency, and scientific rigor.
 
