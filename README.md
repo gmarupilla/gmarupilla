@@ -5,8 +5,7 @@ Geospatial Modeling • Research Software Engineering • System Architecture
 I build scalable scientific and geospatial software systems that support climate-resilient agriculture, high-throughput modeling workflows, and reproducible research. My experience spans NIH-funded computational modeling, large-scale data engineering at Climate LLC (Bayer Crop Science), and the development of open-source tools that strengthen the scientific software ecosystem.
 
 ---
-
-[![JOSS Reviews](https://joss.theoj.org/badges/reviewed_by/@GMarupilla)](https://joss.theoj.org/papers/reviewed_by/@GMarupilla)
+[![JOSS Reviews](https://joss.theoj.org/badges/reviewed_by/@gmarupilla)](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)
 
 ## Professional Focus
 
