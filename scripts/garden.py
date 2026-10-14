@@ -4,6 +4,7 @@ import argparse
 import copy
 from datetime import date, datetime, timedelta, timezone
 from html import escape
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -94,10 +95,11 @@ def cover(name, subtitle, kind):
 
 
 def readme(state, day):
+    image_version = hashlib.sha256(draw(state, day).encode()).hexdigest()[:12]
     lines = ['# Hey, I’m Akhil. Plant something before you leave.', '',
              'I build scientific software, work with maps and models, and follow the occasional infrastructure rabbit hole.', '',
              '[Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)', '',
-             '![A shared island garden. Choose an empty plot in the table below.](assets/garden.svg)', '',
+             f'![A shared island garden. Choose an empty plot in the table below.](assets/garden.svg?v={image_version})', '',
              '### Leave a little life here', '',
              'Choose an empty plot below. Pick a seed in the form, then submit the issue. The garden updates after your request runs.', '',
              '| | ' + ' | '.join(map(str, COLUMNS)) + ' |', '|' + '---|' * (len(COLUMNS)+1)]

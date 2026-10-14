@@ -4,7 +4,7 @@ I build scientific software, work with maps and models, and follow the occasiona
 
 [Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)
 
-![A shared island garden. Choose an empty plot in the table below.](assets/garden.svg)
+![A shared island garden. Choose an empty plot in the table below.](assets/garden.svg?v=04b1a97ac0fe)
 
 ### Leave a little life here
 
