@@ -15,6 +15,12 @@
       "plot": "D4",
       "seed": "Oak",
       "reason": "Oak planted in D4."
+    },
+    "2": {
+      "user": "gmarupilla",
+      "date": "2026-10-14",
+      "accepted": false,
+      "reason": "One plant per person per UTC day. Come back tomorrow."
     }
   },
   "gardeners": {

@@ -34,6 +34,7 @@ The garden refreshes daily and after planting requests. Weather is part of this 
 
 **Recent requests**
 
+- [#2](https://github.com/gmarupilla/gmarupilla/issues/2): One plant per person per UTC day. Come back tomorrow.
 - [#1](https://github.com/gmarupilla/gmarupilla/issues/1): Oak planted in D4.
 
 </details>
