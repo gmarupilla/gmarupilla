@@ -13,6 +13,16 @@ python3 scripts/garden.py preview
 
 `render` draws the real saved state. `preview` creates a separate example garden in the ignored `preview/` directory.
 
+Open `preview/index.html` to review the design. Its example plants do not change the real garden state.
+
+## Artwork
+
+`scripts/garden_art.py` draws the island, pixel sprites, and project covers. All artwork is original and self-contained SVG.
+
+Edit `SPRITES` and `PALETTE` to change the plants. Plot labels render above the plants so mature trees cannot hide them.
+
+Fireflies have a subtle opacity animation. The SVG disables this animation when the viewer prefers reduced motion.
+
 ## Publish
 
 Merge the reviewed files into `main` in `gmarupilla/gmarupilla`. Enable Issues and GitHub Actions. The workflow requires `contents: write` and `issues: write`.

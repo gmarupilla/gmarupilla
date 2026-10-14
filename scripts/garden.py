@@ -11,6 +11,8 @@ import re
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+from garden_art import draw_garden, project_cover
+
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'gmarupilla/gmarupilla'
 PLOTS = [f'{row}{col}' for row in 'ABCD' for col in range(1, 7)]
@@ -83,74 +85,12 @@ def process(state, issues, day):
         state['requests'][key] = result
 
 
-def plant_svg(seed, x, y, days):
-    if days == 0:
-        return f'<g transform="translate({x},{y})"><path d="M0 0v-14" stroke="#b9d89b" stroke-width="3"/><ellipse cx="-5" cy="-13" rx="7" ry="3" fill="#b9d89b" transform="rotate(25 -5 -13)"/><ellipse cx="5" cy="-18" rx="7" ry="3" fill="#8fbb7a" transform="rotate(-25 5 -18)"/></g>'
-    scale = .6 if days < 4 else 1
-    shapes = {
-        'Oak': '<path d="M0 0v-40" stroke="#b68a60" stroke-width="7"/><circle cx="-12" cy="-41" r="17" fill="#548866"/><circle cx="14" cy="-42" r="18" fill="#709f72"/><circle cy="-59" r="18" fill="#94b985"/><path d="M0-17l12-16" stroke="#b68a60" stroke-width="4"/>',
-        'Pine': '<path d="M0 0v-50" stroke="#b68a60" stroke-width="6"/><path d="M0-76l-16 29h9l-17 27h48L7-47h9Z" fill="#77a68c"/><path d="M0-76v56h24L7-47h9Z" fill="#4c7c6b"/>',
-        'Sunflower': '<path d="M0 0v-48m0 27l-14-8m14 15l14-8" stroke="#8faf6d" stroke-width="4"/>' + ''.join(f'<ellipse cx="0" cy="-63" rx="6" ry="10" fill="#f0bd60" transform="rotate({a} 0 -48)"/>' for a in range(0,360,45)) + '<circle cy="-48" r="10" fill="#76543d"/>',
-        'Tulip': '<path d="M0 0v-36M0-9Q-18-30-15-13M0-8Q17-29 14-12" fill="#87a976" stroke="#87a976" stroke-width="3"/><path d="M-14-48l8 6 6-10 6 10 8-6v13Q0-18-14-35Z" fill="#e79e9c"/>',
-        'Mushroom': '<path d="M-5 0l2-27h8l5 27Z" fill="#e8d4b3"/><path d="M-23-24Q0-66 23-24Z" fill="#d58768"/><circle cx="-8" cy="-31" r="3" fill="#f2dfc1"/><circle cx="5" cy="-37" r="4" fill="#f2dfc1"/><circle cx="12" cy="-28" r="2" fill="#f2dfc1"/>',
-        'Wheat': ''.join(f'<g transform="translate({i*10},0) rotate({i*12})"><path d="M0 0v-51" stroke="#d3b16f" stroke-width="2"/>' + ''.join(f'<ellipse cx="-4" cy="{-25-j*8}" rx="3" ry="6" fill="#edcc88" transform="rotate(-35 -4 {-25-j*8})"/><ellipse cx="4" cy="{-29-j*8}" rx="3" ry="6" fill="#d3b16f" transform="rotate(35 4 {-29-j*8})"/>' for j in range(3)) + '</g>' for i in (-1,0,1)),
-    }
-    return f'<g transform="translate({x},{y}) scale({scale})">{shapes[seed]}</g>'
-
-
 def draw(state, day):
-    weather = WEATHER[day.toordinal() % len(WEATHER)]
-    n = len(state['plots'])
-    svg = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" role="img" aria-labelledby="title desc">
-<title id="title">Akhil's tiny world — {n} planted plots</title>
-<desc id="desc">A floating garden with 24 labelled plots. Use the planting links below the image. Garden weather: {weather}.</desc>
-<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#13282d"/><stop offset="1" stop-color="#203c3d"/></linearGradient><radialGradient id="glow"><stop stop-color="#edbb73" stop-opacity=".18"/><stop offset="1" stop-color="#edbb73" stop-opacity="0"/></radialGradient></defs>
-<rect width="1000" height="660" rx="24" fill="url(#sky)"/>
-<circle cx="780" cy="170" r="190" fill="url(#glow)"/>
-<g fill="#9baea2" opacity=".6"><circle cx="83" cy="204" r="2"/><circle cx="890" cy="275" r="2"/><circle cx="703" cy="92" r="1.5"/><circle cx="109" cy="425" r="1.5"/><circle cx="926" cy="459" r="1.5"/></g>
-<text x="52" y="49" fill="#b9c7b5" font-family="monospace" font-size="12" letter-spacing="3">A SMALL EXPERIMENT IN GROWING THINGS</text>
-<text x="49" y="105" fill="#f2e9d6" font-family="Georgia,serif" font-size="48">A tiny world. Made together.</text>
-<text x="52" y="139" fill="#bacabe" font-family="sans-serif" font-size="15">Leave a seed. Come back to see what grows.</text>
-<circle cx="878" cy="94" r="22" fill="#ebc78f"/>
-<ellipse cx="511" cy="558" rx="290" ry="32" fill="#0c2026" opacity=".5"/>
-<path d="M147 432Q128 494 286 538L495 568 753 526Q877 489 850 420L711 257 293 268Z" fill="#695a48"/>
-<path d="M147 432Q161 491 306 522L495 550 749 510Q826 479 850 420L711 257 293 268Z" fill="#867353"/>
-<path d="M191 284Q345 197 583 223L779 292Q877 366 853 431Q776 511 525 526L305 491Q112 452 143 369Z" fill="#82966b"/>
-<path d="M193 289Q345 210 583 232L779 301Q862 366 844 423Q774 498 525 515L307 480Q128 443 153 371Z" fill="#9da67b"/>
-<path d="M707 438q40-29 78-8q24 18-14 35q-55 17-64-27" fill="#598b8f"/><path d="M723 442q21-13 45-3" fill="none" stroke="#a2c1b8" stroke-width="2"/>
-<g fill="#d6c9a0"><ellipse cx="180" cy="389" rx="10" ry="6"/><ellipse cx="202" cy="402" rx="8" ry="5"/><ellipse cx="223" cy="413" rx="6" ry="4"/></g>''']
-    for r, row in enumerate('ABCD'):
-        for c in range(6):
-            plot = f'{row}{c+1}'
-            x, y = 280+c*79+(r%2)*12, 303+r*53
-            plant = state['plots'].get(plot)
-            label = f'{plot}: {plant["seed"]}, caretaker {plant["user"]}' if plant else f'{plot}: empty'
-            svg.append(f'<g><title>{escape(label)}</title><ellipse cx="{x}" cy="{y}" rx="28" ry="12" fill="#677953"/><ellipse cx="{x}" cy="{y-2}" rx="26" ry="10" fill="#756448"/>')
-            if plant:
-                svg.append(plant_svg(plant['seed'],x,y-4,age(plant,day)))
-            else:
-                svg.append(f'<path d="M{x-5} {y-3}h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>')
-            svg.append(f'<text x="{x}" y="{y+23}" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">{plot}</text></g>')
-    if weather == 'Soft rain':
-        svg.append('<g stroke="#9abfc0" opacity=".3">'+''.join(f'<path d="M{x} {y}l-3 9"/>' for x,y in ((191,240),(830,231),(755,182),(136,310),(870,352),(684,198),(371,187)))+'</g>')
-    svg.append(f'<path d="M52 586h896" stroke="#526862"/><text x="52" y="618" fill="#e5dbc5" font-family="monospace" font-size="13">{n:02d} / 24 PLOTS · {len(state["gardeners"]):02d} GARDENERS</text><text x="948" y="618" text-anchor="end" fill="#b9c7b5" font-family="monospace" font-size="12">{weather.upper()} · {day}</text></svg>')
-    return '\n'.join(svg)
+    return draw_garden(state, day, WEATHER[day.toordinal() % len(WEATHER)])
 
 
 def cover(name, subtitle, kind):
-    marks = []
-    if kind == 'terrain':
-        for i in range(12):
-            marks.append(f'<ellipse cx="710" cy="100" rx="{45+i*19}" ry="{20+i*11}" transform="rotate(-20 710 100)" fill="none" stroke="#98b894" stroke-width="1.4" opacity=".6"/>')
-    elif kind == 'yield':
-        for i,v in enumerate([32,55,46,80,64,99,120,110,142]):
-            marks.append(f'<rect x="{595+i*30}" y="{190-v}" width="16" height="{v}" rx="3" fill="#e4b96f" opacity="{.3+i*.07}"/>')
-    else:
-        for r in range(5):
-            for c in range(9):
-                color=['#42695e','#6b8c6c','#a7a273','#cb9c6f','#d18b63'][min(4,(c+r)//3)]
-                marks.append(f'<rect x="{595+c*29}" y="{32+r*32}" width="25" height="28" rx="3" fill="{color}"/>')
-    return f'<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220" role="img"><title>{escape(name)} — {escape(subtitle)}</title><rect width="1000" height="220" rx="18" fill="#192f32"/><g>{"".join(marks)}</g><rect x="0" width="560" height="220" rx="18" fill="#192f32"/><text x="36" y="48" fill="#c5ab7b" font-family="monospace" font-size="11" letter-spacing="3">FROM MY WORKBENCH ↗</text><text x="33" y="105" fill="#f2e9d6" font-family="Georgia,serif" font-size="38">{escape(name)}</text><text x="36" y="147" fill="#bacabe" font-family="sans-serif" font-size="15">{escape(subtitle)}</text><text x="36" y="189" fill="#bacabe" font-family="monospace" font-size="11">{ "ILLUSTRATED PROJECT COVER" }</text></svg>'
+    return project_cover(name, subtitle, kind)
 
 
 def readme(state, day):
@@ -206,6 +146,47 @@ def render(state, day, output):
         ('flashdry','FlashDry','Exploring flash drought through satellites and weather.','dry')]:
         (assets/(filename+'.svg')).write_text(cover(name,subtitle,kind))
     (output/'README.md').write_text(readme(state,day))
+    if output.name == 'preview':
+        preview_page(state, output)
+
+
+def preview_page(state, output):
+    """A local design review with the same state and assets as its README."""
+    page = ['''<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Akhil · Tiny world</title>
+<style>
+body{margin:0;background:#0d1117;color:#e6edf3;font:16px/1.6 system-ui,sans-serif}
+main{max-width:1000px;margin:24px auto;padding:24px}h1{font-size:30px;line-height:1.25}
+h2{margin-top:32px;font-size:22px}a{color:#b0cfa9;text-decoration:none}
+img{width:100%;display:block;margin:22px 0;border-radius:18px}
+.notice{color:#c7b88f;border-bottom:1px solid #34433c;padding-bottom:12px;font:12px/1.5 monospace}
+.muted{color:#9aa99f}table{width:100%;border-collapse:collapse;font-size:13px}
+td,th{text-align:center;border:1px solid #34433c;padding:8px}.plot{color:#bbd2a9}
+@media(max-width:600px){main{padding:14px}h1{font-size:24px}td,th{padding:4px;font-size:10px}}
+</style><main>
+<div class="notice">DESIGN PREVIEW · Example plants. The live garden starts empty. Planting is not active yet.</div>
+<h1>Hey, I’m Akhil. Plant something before you leave.</h1>
+<p>I build scientific software, work with maps and models, and follow the occasional infrastructure rabbit hole.</p>
+<p><a href="https://marupilla.dev">Website ↗</a> · <a href="https://www.linkedin.com/in/gmarupilla">LinkedIn ↗</a> · <a href="https://joss.theoj.org/papers/reviewed_by/@gmarupilla">JOSS reviews ↗</a></p>
+<img src="assets/garden.svg" alt="An example community garden">
+<h2>Leave a little life here</h2><p>Choose an empty plot. Pick a seed in the form, then submit the issue.</p>
+<table><tr><th></th>''']
+    page.extend(f'<th>{c}</th>' for c in range(1,7))
+    page.append('</tr>')
+    for row in 'ABCD':
+        page.append(f'<tr><th>{row}</th>')
+        for c in range(1,7):
+            plot=f'{row}{c}'
+            plant=state['plots'].get(plot)
+            label=plant['seed'] if plant else f'＋ {plot}'
+            page.append(f'<td class="plot">{escape(label)}</td>')
+        page.append('</tr>')
+    page.append('</table><p><b>Seed shelf:</b> Oak · Pine · Sunflower · Tulip · Mushroom · Wheat</p><p class="muted">One plant per person per UTC day. Plants mature after four days and return to soil after 21 days.</p><h2>A few other things I’m growing</h2>')
+    for repo,asset in [('AgroTerraFlow','agroterraflow'),('yieldcast','yieldcast'),('flashdry','flashdry')]:
+        page.append(f'<a href="https://github.com/gmarupilla/{repo}"><img src="assets/{asset}.svg" alt="{escape(repo)} project cover"></a>')
+    page.append('<p>Also on the workbench: <a href="https://github.com/gmarupilla/trialflow-agro">TrialFlow-Agro</a>, a reproducible workflow for agricultural field trials.</p><small class="muted">Inspired by Tim Burgan’s community chess. Original code and artwork.</small></main></html>')
+    (output/'index.html').write_text(''.join(page))
 
 
 def main():
