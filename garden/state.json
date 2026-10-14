@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "plots": {},
-  "requests": {},
-  "gardeners": {},
-  "last_planted": {},
+  "plots": {
+    "D4": {
+      "seed": "Oak",
+      "user": "gmarupilla",
+      "planted": "2026-10-14"
+    }
+  },
+  "requests": {
+    "1": {
+      "user": "gmarupilla",
+      "date": "2026-10-14",
+      "accepted": true,
+      "plot": "D4",
+      "seed": "Oak",
+      "reason": "Oak planted in D4."
+    }
+  },
+  "gardeners": {
+    "gmarupilla": 1
+  },
+  "last_planted": {
+    "gmarupilla": "2026-10-14"
+  },
   "composted": 0
 }

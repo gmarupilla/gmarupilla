@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
-<title id="title">Tiny world — 0 of 48 garden plots planted</title>
+<title id="title">Tiny world — 1 of 48 garden plots planted</title>
 <desc id="desc">An original pixel-art island with a cottage, glowing lanterns, a waterfall and 48 planting plots. Use the labelled planting table below. Imaginary weather: Golden light.</desc>
 <defs>
   <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#101c2c"/><stop offset="1" stop-color="#244248"/></linearGradient>
@@ -730,15 +730,14 @@
 <rect x="238" y="193" width="1" height="5" fill="#bd9765" />
 <rect x="251" y="201" width="1" height="7" fill="#775d45" />
 </g>
-<g><title>D4: empty</title>
+<g><title>D4: Oak, caretaker gmarupilla</title>
 <polygon points="280,191 299,200 280,209 261,200" fill="#4d7048" />
 <polygon points="280,190 297,198 280,206 263,198" fill="#ae8c5a" />
 <polygon points="280,191 295,197 280,203 265,197" fill="#765640" />
 <polygon points="268,195 277,199 279,198 270,194" fill="#956a48" />
 <polygon points="274,195 283,199 285,198 276,194" fill="#956a48" />
 <polygon points="280,195 289,199 291,198 282,194" fill="#956a48" />
-<rect x="278" y="195" width="5" height="1" fill="#bd9765" />
-<rect x="280" y="193" width="1" height="5" fill="#bd9765" />
+<g transform="translate(275.5,189)" shape-rendering="crispEdges"><rect x="7" y="0" width="1" height="1" fill="#9bc56c" /><rect x="8" y="0" width="1" height="1" fill="#9bc56c" /><rect x="6" y="1" width="1" height="1" fill="#9bc56c" /><rect x="7" y="1" width="1" height="1" fill="#d5de8c" /><rect x="8" y="1" width="1" height="1" fill="#9bc56c" /><rect x="1" y="2" width="1" height="1" fill="#659659" /><rect x="2" y="2" width="1" height="1" fill="#659659" /><rect x="6" y="2" width="1" height="1" fill="#9bc56c" /><rect x="7" y="2" width="1" height="1" fill="#9bc56c" /><rect x="0" y="3" width="1" height="1" fill="#659659" /><rect x="1" y="3" width="1" height="1" fill="#9bc56c" /><rect x="2" y="3" width="1" height="1" fill="#659659" /><rect x="3" y="3" width="1" height="1" fill="#659659" /><rect x="6" y="3" width="1" height="1" fill="#427453" /><rect x="1" y="4" width="1" height="1" fill="#659659" /><rect x="2" y="4" width="1" height="1" fill="#659659" /><rect x="3" y="4" width="1" height="1" fill="#659659" /><rect x="6" y="4" width="1" height="1" fill="#427453" /><rect x="3" y="5" width="1" height="1" fill="#427453" /><rect x="5" y="5" width="1" height="1" fill="#427453" /><rect x="4" y="6" width="1" height="1" fill="#427453" /><rect x="4" y="7" width="1" height="1" fill="#427453" /></g>
 <rect x="293" y="201" width="1" height="7" fill="#775d45" />
 </g>
 <g><title>C5: empty</title>
@@ -1148,7 +1147,7 @@
 <g class="firefly"><circle cx="197" cy="309" r="9" fill="url(#lamp)"/><rect x="197" y="309" width="2" height="2" fill="#f1d490" /></g>
 </g>
 <rect x="31" y="366" width="538" height="1" fill="#456064" />
-<text x="32" y="385" fill="#e5d8b9" font-size="8" font-family="ui-monospace,Menlo,Consolas,monospace" >00/48 GROWING</text>
-<text x="172" y="385" fill="#a7bdb4" font-size="8" font-family="ui-monospace,Menlo,Consolas,monospace" >00 GARDENERS</text>
+<text x="32" y="385" fill="#e5d8b9" font-size="8" font-family="ui-monospace,Menlo,Consolas,monospace" >01/48 GROWING</text>
+<text x="172" y="385" fill="#a7bdb4" font-size="8" font-family="ui-monospace,Menlo,Consolas,monospace" >01 GARDENERS</text>
 <text x="568" y="385" fill="#a7bdb4" font-size="8" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="end">GOLDEN LIGHT</text>
 </g></svg>
