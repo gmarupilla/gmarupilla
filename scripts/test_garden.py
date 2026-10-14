@@ -1,5 +1,8 @@
 import copy
 from datetime import date, timedelta
+from pathlib import Path
+import re
+import tempfile
 import unittest
 import xml.etree.ElementTree as ET
 
@@ -67,6 +70,19 @@ class GardenTests(unittest.TestCase):
         self.assertFalse(self.state['requests']['50']['accepted'])
         self.assertNotIn('template=plant.yml', garden.readme(self.state, self.day))
         self.assertIn('48/48 GROWING', garden.draw(self.state, self.day))
+
+    def test_state_change_publishes_a_new_existing_image_path(self):
+        with tempfile.TemporaryDirectory() as folder:
+            output = Path(folder)
+            garden.render(self.state, self.day, output)
+            first = re.search(r'assets/garden-[0-9a-f]{12}\.svg', (output/'README.md').read_text())[0]
+            self.assertTrue((output/first).exists())
+            garden.process(self.state, [self.issue()], self.day)
+            garden.render(self.state, self.day, output)
+            second = re.search(r'assets/garden-[0-9a-f]{12}\.svg', (output/'README.md').read_text())[0]
+            self.assertNotEqual(first, second)
+            self.assertTrue((output/second).exists())
+            self.assertFalse((output/first).exists())
 
 
 if __name__ == '__main__':
