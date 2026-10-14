@@ -1,0 +1,43 @@
+name: Tend the tiny world
+on:
+  issues:
+    types: [opened, reopened]
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+# Each run drains all open planting requests, including requests from replaced pending runs.
+concurrency:
+  group: tiny-world
+  cancel-in-progress: false
+
+jobs:
+  garden:
+    if: github.event_name != 'issues' || github.event.issue.title == 'garden: plant'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+      - name: Process requests and draw the garden
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/garden.py update
+      - name: Save the garden
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md garden/state.json assets/
+          if ! git diff --cached --quiet; then
+            git commit -m "Tend the community garden"
+            git push origin HEAD:main
+          fi
+      - name: Close processed requests after saving
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/garden.py close

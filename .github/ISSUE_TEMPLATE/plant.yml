@@ -1,0 +1,54 @@
+name: Plant something
+description: Leave a little life in Akhil's community garden.
+title: "garden: plant"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pick an empty plot and a seed. Submit this issue to plant it.
+        One plant per person per UTC day. If someone takes your plot first, choose another empty plot.
+        The garden records your public GitHub username as the caretaker.
+  - type: dropdown
+    id: plot
+    attributes:
+      label: Plot
+      options:
+        - A1
+        - A2
+        - A3
+        - A4
+        - A5
+        - A6
+        - B1
+        - B2
+        - B3
+        - B4
+        - B5
+        - B6
+        - C1
+        - C2
+        - C3
+        - C4
+        - C5
+        - C6
+        - D1
+        - D2
+        - D3
+        - D4
+        - D5
+        - D6
+    validations:
+      required: true
+  - type: dropdown
+    id: seed
+    attributes:
+      label: Seed
+      options:
+        - Oak
+        - Pine
+        - Sunflower
+        - Tulip
+        - Mushroom
+        - Wheat
+    validations:
+      required: true

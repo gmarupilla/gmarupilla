@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" role="img" aria-labelledby="title desc">
+<title id="title">Akhil's tiny world — 0 planted plots</title>
+<desc id="desc">A floating garden with 24 labelled plots. Use the planting links below the image. Garden weather: Golden light.</desc>
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#13282d"/><stop offset="1" stop-color="#203c3d"/></linearGradient><radialGradient id="glow"><stop stop-color="#edbb73" stop-opacity=".18"/><stop offset="1" stop-color="#edbb73" stop-opacity="0"/></radialGradient></defs>
+<rect width="1000" height="660" rx="24" fill="url(#sky)"/>
+<circle cx="780" cy="170" r="190" fill="url(#glow)"/>
+<g fill="#9baea2" opacity=".6"><circle cx="83" cy="204" r="2"/><circle cx="890" cy="275" r="2"/><circle cx="703" cy="92" r="1.5"/><circle cx="109" cy="425" r="1.5"/><circle cx="926" cy="459" r="1.5"/></g>
+<text x="52" y="49" fill="#b9c7b5" font-family="monospace" font-size="12" letter-spacing="3">A SMALL EXPERIMENT IN GROWING THINGS</text>
+<text x="49" y="105" fill="#f2e9d6" font-family="Georgia,serif" font-size="48">A tiny world. Made together.</text>
+<text x="52" y="139" fill="#bacabe" font-family="sans-serif" font-size="15">Leave a seed. Come back to see what grows.</text>
+<circle cx="878" cy="94" r="22" fill="#ebc78f"/>
+<ellipse cx="511" cy="558" rx="290" ry="32" fill="#0c2026" opacity=".5"/>
+<path d="M147 432Q128 494 286 538L495 568 753 526Q877 489 850 420L711 257 293 268Z" fill="#695a48"/>
+<path d="M147 432Q161 491 306 522L495 550 749 510Q826 479 850 420L711 257 293 268Z" fill="#867353"/>
+<path d="M191 284Q345 197 583 223L779 292Q877 366 853 431Q776 511 525 526L305 491Q112 452 143 369Z" fill="#82966b"/>
+<path d="M193 289Q345 210 583 232L779 301Q862 366 844 423Q774 498 525 515L307 480Q128 443 153 371Z" fill="#9da67b"/>
+<path d="M707 438q40-29 78-8q24 18-14 35q-55 17-64-27" fill="#598b8f"/><path d="M723 442q21-13 45-3" fill="none" stroke="#a2c1b8" stroke-width="2"/>
+<g fill="#d6c9a0"><ellipse cx="180" cy="389" rx="10" ry="6"/><ellipse cx="202" cy="402" rx="8" ry="5"/><ellipse cx="223" cy="413" rx="6" ry="4"/></g>
+<g><title>A1: empty</title><ellipse cx="280" cy="303" rx="28" ry="12" fill="#677953"/><ellipse cx="280" cy="301" rx="26" ry="10" fill="#756448"/>
+<path d="M275 300h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="280" y="326" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">A1</text></g>
+<g><title>A2: empty</title><ellipse cx="359" cy="303" rx="28" ry="12" fill="#677953"/><ellipse cx="359" cy="301" rx="26" ry="10" fill="#756448"/>
+<path d="M354 300h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="359" y="326" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">A2</text></g>
+<g><title>A3: empty</title><ellipse cx="438" cy="303" rx="28" ry="12" fill="#677953"/><ellipse cx="438" cy="301" rx="26" ry="10" fill="#756448"/>
+<path d="M433 300h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="438" y="326" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">A3</text></g>
+<g><title>A4: empty</title><ellipse cx="517" cy="303" rx="28" ry="12" fill="#677953"/><ellipse cx="517" cy="301" rx="26" ry="10" fill="#756448"/>
+<path d="M512 300h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="517" y="326" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">A4</text></g>
+<g><title>A5: empty</title><ellipse cx="596" cy="303" rx="28" ry="12" fill="#677953"/><ellipse cx="596" cy="301" rx="26" ry="10" fill="#756448"/>
+<path d="M591 300h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="596" y="326" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">A5</text></g>
+<g><title>A6: empty</title><ellipse cx="675" cy="303" rx="28" ry="12" fill="#677953"/><ellipse cx="675" cy="301" rx="26" ry="10" fill="#756448"/>
+<path d="M670 300h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="675" y="326" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">A6</text></g>
+<g><title>B1: empty</title><ellipse cx="292" cy="356" rx="28" ry="12" fill="#677953"/><ellipse cx="292" cy="354" rx="26" ry="10" fill="#756448"/>
+<path d="M287 353h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="292" y="379" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">B1</text></g>
+<g><title>B2: empty</title><ellipse cx="371" cy="356" rx="28" ry="12" fill="#677953"/><ellipse cx="371" cy="354" rx="26" ry="10" fill="#756448"/>
+<path d="M366 353h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="371" y="379" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">B2</text></g>
+<g><title>B3: empty</title><ellipse cx="450" cy="356" rx="28" ry="12" fill="#677953"/><ellipse cx="450" cy="354" rx="26" ry="10" fill="#756448"/>
+<path d="M445 353h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="450" y="379" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">B3</text></g>
+<g><title>B4: empty</title><ellipse cx="529" cy="356" rx="28" ry="12" fill="#677953"/><ellipse cx="529" cy="354" rx="26" ry="10" fill="#756448"/>
+<path d="M524 353h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="529" y="379" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">B4</text></g>
+<g><title>B5: empty</title><ellipse cx="608" cy="356" rx="28" ry="12" fill="#677953"/><ellipse cx="608" cy="354" rx="26" ry="10" fill="#756448"/>
+<path d="M603 353h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="608" y="379" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">B5</text></g>
+<g><title>B6: empty</title><ellipse cx="687" cy="356" rx="28" ry="12" fill="#677953"/><ellipse cx="687" cy="354" rx="26" ry="10" fill="#756448"/>
+<path d="M682 353h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="687" y="379" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">B6</text></g>
+<g><title>C1: empty</title><ellipse cx="280" cy="409" rx="28" ry="12" fill="#677953"/><ellipse cx="280" cy="407" rx="26" ry="10" fill="#756448"/>
+<path d="M275 406h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="280" y="432" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">C1</text></g>
+<g><title>C2: empty</title><ellipse cx="359" cy="409" rx="28" ry="12" fill="#677953"/><ellipse cx="359" cy="407" rx="26" ry="10" fill="#756448"/>
+<path d="M354 406h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="359" y="432" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">C2</text></g>
+<g><title>C3: empty</title><ellipse cx="438" cy="409" rx="28" ry="12" fill="#677953"/><ellipse cx="438" cy="407" rx="26" ry="10" fill="#756448"/>
+<path d="M433 406h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="438" y="432" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">C3</text></g>
+<g><title>C4: empty</title><ellipse cx="517" cy="409" rx="28" ry="12" fill="#677953"/><ellipse cx="517" cy="407" rx="26" ry="10" fill="#756448"/>
+<path d="M512 406h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="517" y="432" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">C4</text></g>
+<g><title>C5: empty</title><ellipse cx="596" cy="409" rx="28" ry="12" fill="#677953"/><ellipse cx="596" cy="407" rx="26" ry="10" fill="#756448"/>
+<path d="M591 406h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="596" y="432" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">C5</text></g>
+<g><title>C6: empty</title><ellipse cx="675" cy="409" rx="28" ry="12" fill="#677953"/><ellipse cx="675" cy="407" rx="26" ry="10" fill="#756448"/>
+<path d="M670 406h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="675" y="432" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">C6</text></g>
+<g><title>D1: empty</title><ellipse cx="292" cy="462" rx="28" ry="12" fill="#677953"/><ellipse cx="292" cy="460" rx="26" ry="10" fill="#756448"/>
+<path d="M287 459h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="292" y="485" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">D1</text></g>
+<g><title>D2: empty</title><ellipse cx="371" cy="462" rx="28" ry="12" fill="#677953"/><ellipse cx="371" cy="460" rx="26" ry="10" fill="#756448"/>
+<path d="M366 459h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="371" y="485" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">D2</text></g>
+<g><title>D3: empty</title><ellipse cx="450" cy="462" rx="28" ry="12" fill="#677953"/><ellipse cx="450" cy="460" rx="26" ry="10" fill="#756448"/>
+<path d="M445 459h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="450" y="485" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">D3</text></g>
+<g><title>D4: empty</title><ellipse cx="529" cy="462" rx="28" ry="12" fill="#677953"/><ellipse cx="529" cy="460" rx="26" ry="10" fill="#756448"/>
+<path d="M524 459h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="529" y="485" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">D4</text></g>
+<g><title>D5: empty</title><ellipse cx="608" cy="462" rx="28" ry="12" fill="#677953"/><ellipse cx="608" cy="460" rx="26" ry="10" fill="#756448"/>
+<path d="M603 459h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="608" y="485" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">D5</text></g>
+<g><title>D6: empty</title><ellipse cx="687" cy="462" rx="28" ry="12" fill="#677953"/><ellipse cx="687" cy="460" rx="26" ry="10" fill="#756448"/>
+<path d="M682 459h10m-5-4v8" stroke="#c7b48b" stroke-width="1.5" opacity=".7"/>
+<text x="687" y="485" fill="#293e30" text-anchor="middle" font-family="monospace" font-size="10">D6</text></g>
+<path d="M52 586h896" stroke="#526862"/><text x="52" y="618" fill="#e5dbc5" font-family="monospace" font-size="13">00 / 24 PLOTS · 00 GARDENERS</text><text x="948" y="618" text-anchor="end" fill="#b9c7b5" font-family="monospace" font-size="12">GOLDEN LIGHT · 2026-10-14</text></svg>
