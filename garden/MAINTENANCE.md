@@ -21,7 +21,7 @@ Open `preview/index.html` to review the design. Its example plants do not change
 
 `scripts/garden_art.py` draws the island, pixel sprites, and project covers. All artwork is original and self-contained SVG.
 
-`scripts/garden_layout.py` defines the shared plot grid. If you change the grid, also update the issue form options and request validation.
+`scripts/garden_layout.py` defines the shared plot grid. If you change the grid, also update the issue form description and request validation.
 
 Edit `SPRITES` and `PALETTE` to change the plants. Plot labels render above the plants so mature trees cannot hide them.
 
