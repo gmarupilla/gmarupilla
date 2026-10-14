@@ -23,7 +23,7 @@ Open `preview/index.html` to review the design. Its example plants do not change
 
 `scripts/garden_layout.py` defines the shared plot grid. If you change the grid, also update the issue form description and request validation.
 
-Edit `SPRITES` and `PALETTE` to change the plants. Plot labels render above the plants so mature trees cannot hide them.
+Edit `SPRITES` and `PALETTE` to change the plants. Each plot and its label render together, from back to front. Rear labels cannot cover foreground plants.
 
 Fireflies have a subtle opacity animation. The SVG disables this animation when the viewer prefers reduced motion.
 

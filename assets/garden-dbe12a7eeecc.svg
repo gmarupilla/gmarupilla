@@ -486,6 +486,8 @@
 <polygon points="280,129 289,133 291,132 282,128" fill="#956a48" />
 <rect x="278" y="129" width="5" height="1" fill="#bd9765" />
 <rect x="280" y="127" width="1" height="5" fill="#bd9765" />
+<rect x="274" y="134" width="12" height="5" fill="#d3bd86" />
+<text x="280" y="137.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A1</text>
 </g>
 <g><title>B1: empty</title>
 <polygon points="259,136 278,145 259,154 240,145" fill="#4d7048" />
@@ -496,6 +498,8 @@
 <polygon points="259,140 268,144 270,143 261,139" fill="#956a48" />
 <rect x="257" y="140" width="5" height="1" fill="#bd9765" />
 <rect x="259" y="138" width="1" height="5" fill="#bd9765" />
+<rect x="253" y="145" width="12" height="5" fill="#d3bd86" />
+<text x="259" y="148.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B1</text>
 </g>
 <g><title>A2: Oak, caretaker gmarupilla</title>
 <polygon points="301,136 320,145 301,154 282,145" fill="#4d7048" />
@@ -505,7 +509,9 @@
 <polygon points="295,140 304,144 306,143 297,139" fill="#956a48" />
 <polygon points="301,140 310,144 312,143 303,139" fill="#956a48" />
 <polygon points="301,137 314,142 301,147 288,142" fill="#55774c" />
-<g transform="translate(292,126)" shape-rendering="crispEdges"><rect x="14" y="0" width="2" height="2" fill="#9bc56c" /><rect x="16" y="0" width="2" height="2" fill="#9bc56c" /><rect x="12" y="2" width="2" height="2" fill="#9bc56c" /><rect x="14" y="2" width="2" height="2" fill="#d5de8c" /><rect x="16" y="2" width="2" height="2" fill="#9bc56c" /><rect x="2" y="4" width="2" height="2" fill="#659659" /><rect x="4" y="4" width="2" height="2" fill="#659659" /><rect x="12" y="4" width="2" height="2" fill="#9bc56c" /><rect x="14" y="4" width="2" height="2" fill="#9bc56c" /><rect x="0" y="6" width="2" height="2" fill="#659659" /><rect x="2" y="6" width="2" height="2" fill="#9bc56c" /><rect x="4" y="6" width="2" height="2" fill="#659659" /><rect x="6" y="6" width="2" height="2" fill="#659659" /><rect x="12" y="6" width="2" height="2" fill="#427453" /><rect x="2" y="8" width="2" height="2" fill="#659659" /><rect x="4" y="8" width="2" height="2" fill="#659659" /><rect x="6" y="8" width="2" height="2" fill="#659659" /><rect x="12" y="8" width="2" height="2" fill="#427453" /><rect x="6" y="10" width="2" height="2" fill="#427453" /><rect x="10" y="10" width="2" height="2" fill="#427453" /><rect x="8" y="12" width="2" height="2" fill="#427453" /><rect x="8" y="14" width="2" height="2" fill="#427453" /></g>
+<g transform="translate(293.125,128)" shape-rendering="crispEdges"><rect x="12.25" y="0.0" width="1.75" height="1.75" fill="#9bc56c" /><rect x="14.0" y="0.0" width="1.75" height="1.75" fill="#9bc56c" /><rect x="10.5" y="1.75" width="1.75" height="1.75" fill="#9bc56c" /><rect x="12.25" y="1.75" width="1.75" height="1.75" fill="#d5de8c" /><rect x="14.0" y="1.75" width="1.75" height="1.75" fill="#9bc56c" /><rect x="1.75" y="3.5" width="1.75" height="1.75" fill="#659659" /><rect x="3.5" y="3.5" width="1.75" height="1.75" fill="#659659" /><rect x="10.5" y="3.5" width="1.75" height="1.75" fill="#9bc56c" /><rect x="12.25" y="3.5" width="1.75" height="1.75" fill="#9bc56c" /><rect x="0.0" y="5.25" width="1.75" height="1.75" fill="#659659" /><rect x="1.75" y="5.25" width="1.75" height="1.75" fill="#9bc56c" /><rect x="3.5" y="5.25" width="1.75" height="1.75" fill="#659659" /><rect x="5.25" y="5.25" width="1.75" height="1.75" fill="#659659" /><rect x="10.5" y="5.25" width="1.75" height="1.75" fill="#427453" /><rect x="1.75" y="7.0" width="1.75" height="1.75" fill="#659659" /><rect x="3.5" y="7.0" width="1.75" height="1.75" fill="#659659" /><rect x="5.25" y="7.0" width="1.75" height="1.75" fill="#659659" /><rect x="10.5" y="7.0" width="1.75" height="1.75" fill="#427453" /><rect x="5.25" y="8.75" width="1.75" height="1.75" fill="#427453" /><rect x="8.75" y="8.75" width="1.75" height="1.75" fill="#427453" /><rect x="7.0" y="10.5" width="1.75" height="1.75" fill="#427453" /><rect x="7.0" y="12.25" width="1.75" height="1.75" fill="#427453" /></g>
+<rect x="295" y="145" width="12" height="5" fill="#d3bd86" />
+<text x="301" y="148.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A2</text>
 </g>
 <g><title>C1: empty</title>
 <polygon points="238,147 257,156 238,165 219,156" fill="#4d7048" />
@@ -516,6 +522,8 @@
 <polygon points="238,151 247,155 249,154 240,150" fill="#956a48" />
 <rect x="236" y="151" width="5" height="1" fill="#bd9765" />
 <rect x="238" y="149" width="1" height="5" fill="#bd9765" />
+<rect x="232" y="156" width="12" height="5" fill="#d3bd86" />
+<text x="238" y="159.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C1</text>
 </g>
 <g><title>B2: empty</title>
 <polygon points="280,147 299,156 280,165 261,156" fill="#4d7048" />
@@ -526,6 +534,8 @@
 <polygon points="280,151 289,155 291,154 282,150" fill="#956a48" />
 <rect x="278" y="151" width="5" height="1" fill="#bd9765" />
 <rect x="280" y="149" width="1" height="5" fill="#bd9765" />
+<rect x="274" y="156" width="12" height="5" fill="#d3bd86" />
+<text x="280" y="159.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B2</text>
 </g>
 <g><title>A3: empty</title>
 <polygon points="322,147 341,156 322,165 303,156" fill="#4d7048" />
@@ -536,6 +546,8 @@
 <polygon points="322,151 331,155 333,154 324,150" fill="#956a48" />
 <rect x="320" y="151" width="5" height="1" fill="#bd9765" />
 <rect x="322" y="149" width="1" height="5" fill="#bd9765" />
+<rect x="316" y="156" width="12" height="5" fill="#d3bd86" />
+<text x="322" y="159.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A3</text>
 </g>
 <g><title>D1: empty</title>
 <polygon points="217,158 236,167 217,176 198,167" fill="#4d7048" />
@@ -546,6 +558,8 @@
 <polygon points="217,162 226,166 228,165 219,161" fill="#956a48" />
 <rect x="215" y="162" width="5" height="1" fill="#bd9765" />
 <rect x="217" y="160" width="1" height="5" fill="#bd9765" />
+<rect x="211" y="167" width="12" height="5" fill="#d3bd86" />
+<text x="217" y="170.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D1</text>
 </g>
 <g><title>C2: empty</title>
 <polygon points="259,158 278,167 259,176 240,167" fill="#4d7048" />
@@ -556,6 +570,8 @@
 <polygon points="259,162 268,166 270,165 261,161" fill="#956a48" />
 <rect x="257" y="162" width="5" height="1" fill="#bd9765" />
 <rect x="259" y="160" width="1" height="5" fill="#bd9765" />
+<rect x="253" y="167" width="12" height="5" fill="#d3bd86" />
+<text x="259" y="170.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C2</text>
 </g>
 <g><title>B3: empty</title>
 <polygon points="301,158 320,167 301,176 282,167" fill="#4d7048" />
@@ -566,6 +582,8 @@
 <polygon points="301,162 310,166 312,165 303,161" fill="#956a48" />
 <rect x="299" y="162" width="5" height="1" fill="#bd9765" />
 <rect x="301" y="160" width="1" height="5" fill="#bd9765" />
+<rect x="295" y="167" width="12" height="5" fill="#d3bd86" />
+<text x="301" y="170.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B3</text>
 </g>
 <g><title>A4: empty</title>
 <polygon points="343,158 362,167 343,176 324,167" fill="#4d7048" />
@@ -576,6 +594,8 @@
 <polygon points="343,162 352,166 354,165 345,161" fill="#956a48" />
 <rect x="341" y="162" width="5" height="1" fill="#bd9765" />
 <rect x="343" y="160" width="1" height="5" fill="#bd9765" />
+<rect x="337" y="167" width="12" height="5" fill="#d3bd86" />
+<text x="343" y="170.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A4</text>
 </g>
 <g><title>E1: empty</title>
 <polygon points="196,169 215,178 196,187 177,178" fill="#4d7048" />
@@ -586,6 +606,8 @@
 <polygon points="196,173 205,177 207,176 198,172" fill="#956a48" />
 <rect x="194" y="173" width="5" height="1" fill="#bd9765" />
 <rect x="196" y="171" width="1" height="5" fill="#bd9765" />
+<rect x="190" y="178" width="12" height="5" fill="#d3bd86" />
+<text x="196" y="181.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E1</text>
 </g>
 <g><title>D2: empty</title>
 <polygon points="238,169 257,178 238,187 219,178" fill="#4d7048" />
@@ -596,6 +618,8 @@
 <polygon points="238,173 247,177 249,176 240,172" fill="#956a48" />
 <rect x="236" y="173" width="5" height="1" fill="#bd9765" />
 <rect x="238" y="171" width="1" height="5" fill="#bd9765" />
+<rect x="232" y="178" width="12" height="5" fill="#d3bd86" />
+<text x="238" y="181.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D2</text>
 </g>
 <g><title>C3: empty</title>
 <polygon points="280,169 299,178 280,187 261,178" fill="#4d7048" />
@@ -606,6 +630,8 @@
 <polygon points="280,173 289,177 291,176 282,172" fill="#956a48" />
 <rect x="278" y="173" width="5" height="1" fill="#bd9765" />
 <rect x="280" y="171" width="1" height="5" fill="#bd9765" />
+<rect x="274" y="178" width="12" height="5" fill="#d3bd86" />
+<text x="280" y="181.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C3</text>
 </g>
 <g><title>B4: empty</title>
 <polygon points="322,169 341,178 322,187 303,178" fill="#4d7048" />
@@ -616,6 +642,8 @@
 <polygon points="322,173 331,177 333,176 324,172" fill="#956a48" />
 <rect x="320" y="173" width="5" height="1" fill="#bd9765" />
 <rect x="322" y="171" width="1" height="5" fill="#bd9765" />
+<rect x="316" y="178" width="12" height="5" fill="#d3bd86" />
+<text x="322" y="181.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B4</text>
 </g>
 <g><title>A5: empty</title>
 <polygon points="364,169 383,178 364,187 345,178" fill="#4d7048" />
@@ -626,6 +654,8 @@
 <polygon points="364,173 373,177 375,176 366,172" fill="#956a48" />
 <rect x="362" y="173" width="5" height="1" fill="#bd9765" />
 <rect x="364" y="171" width="1" height="5" fill="#bd9765" />
+<rect x="358" y="178" width="12" height="5" fill="#d3bd86" />
+<text x="364" y="181.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A5</text>
 </g>
 <g><title>F1: empty</title>
 <polygon points="175,180 194,189 175,198 156,189" fill="#4d7048" />
@@ -636,6 +666,8 @@
 <polygon points="175,184 184,188 186,187 177,183" fill="#956a48" />
 <rect x="173" y="184" width="5" height="1" fill="#bd9765" />
 <rect x="175" y="182" width="1" height="5" fill="#bd9765" />
+<rect x="169" y="189" width="12" height="5" fill="#d3bd86" />
+<text x="175" y="192.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F1</text>
 </g>
 <g><title>E2: empty</title>
 <polygon points="217,180 236,189 217,198 198,189" fill="#4d7048" />
@@ -646,6 +678,8 @@
 <polygon points="217,184 226,188 228,187 219,183" fill="#956a48" />
 <rect x="215" y="184" width="5" height="1" fill="#bd9765" />
 <rect x="217" y="182" width="1" height="5" fill="#bd9765" />
+<rect x="211" y="189" width="12" height="5" fill="#d3bd86" />
+<text x="217" y="192.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E2</text>
 </g>
 <g><title>D3: empty</title>
 <polygon points="259,180 278,189 259,198 240,189" fill="#4d7048" />
@@ -656,6 +690,8 @@
 <polygon points="259,184 268,188 270,187 261,183" fill="#956a48" />
 <rect x="257" y="184" width="5" height="1" fill="#bd9765" />
 <rect x="259" y="182" width="1" height="5" fill="#bd9765" />
+<rect x="253" y="189" width="12" height="5" fill="#d3bd86" />
+<text x="259" y="192.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D3</text>
 </g>
 <g><title>C4: empty</title>
 <polygon points="301,180 320,189 301,198 282,189" fill="#4d7048" />
@@ -666,6 +702,8 @@
 <polygon points="301,184 310,188 312,187 303,183" fill="#956a48" />
 <rect x="299" y="184" width="5" height="1" fill="#bd9765" />
 <rect x="301" y="182" width="1" height="5" fill="#bd9765" />
+<rect x="295" y="189" width="12" height="5" fill="#d3bd86" />
+<text x="301" y="192.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C4</text>
 </g>
 <g><title>B5: empty</title>
 <polygon points="343,180 362,189 343,198 324,189" fill="#4d7048" />
@@ -676,6 +714,8 @@
 <polygon points="343,184 352,188 354,187 345,183" fill="#956a48" />
 <rect x="341" y="184" width="5" height="1" fill="#bd9765" />
 <rect x="343" y="182" width="1" height="5" fill="#bd9765" />
+<rect x="337" y="189" width="12" height="5" fill="#d3bd86" />
+<text x="343" y="192.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B5</text>
 </g>
 <g><title>A6: empty</title>
 <polygon points="385,180 404,189 385,198 366,189" fill="#4d7048" />
@@ -686,6 +726,8 @@
 <polygon points="385,184 394,188 396,187 387,183" fill="#956a48" />
 <rect x="383" y="184" width="5" height="1" fill="#bd9765" />
 <rect x="385" y="182" width="1" height="5" fill="#bd9765" />
+<rect x="379" y="189" width="12" height="5" fill="#d3bd86" />
+<text x="385" y="192.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A6</text>
 </g>
 <g><title>F2: empty</title>
 <polygon points="196,191 215,200 196,209 177,200" fill="#4d7048" />
@@ -696,6 +738,8 @@
 <polygon points="196,195 205,199 207,198 198,194" fill="#956a48" />
 <rect x="194" y="195" width="5" height="1" fill="#bd9765" />
 <rect x="196" y="193" width="1" height="5" fill="#bd9765" />
+<rect x="190" y="200" width="12" height="5" fill="#d3bd86" />
+<text x="196" y="203.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F2</text>
 </g>
 <g><title>E3: empty</title>
 <polygon points="238,191 257,200 238,209 219,200" fill="#4d7048" />
@@ -706,6 +750,8 @@
 <polygon points="238,195 247,199 249,198 240,194" fill="#956a48" />
 <rect x="236" y="195" width="5" height="1" fill="#bd9765" />
 <rect x="238" y="193" width="1" height="5" fill="#bd9765" />
+<rect x="232" y="200" width="12" height="5" fill="#d3bd86" />
+<text x="238" y="203.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E3</text>
 </g>
 <g><title>D4: Oak, caretaker gmarupilla</title>
 <polygon points="280,191 299,200 280,209 261,200" fill="#4d7048" />
@@ -715,7 +761,9 @@
 <polygon points="274,195 283,199 285,198 276,194" fill="#956a48" />
 <polygon points="280,195 289,199 291,198 282,194" fill="#956a48" />
 <polygon points="280,192 293,197 280,202 267,197" fill="#55774c" />
-<g transform="translate(271,181)" shape-rendering="crispEdges"><rect x="14" y="0" width="2" height="2" fill="#9bc56c" /><rect x="16" y="0" width="2" height="2" fill="#9bc56c" /><rect x="12" y="2" width="2" height="2" fill="#9bc56c" /><rect x="14" y="2" width="2" height="2" fill="#d5de8c" /><rect x="16" y="2" width="2" height="2" fill="#9bc56c" /><rect x="2" y="4" width="2" height="2" fill="#659659" /><rect x="4" y="4" width="2" height="2" fill="#659659" /><rect x="12" y="4" width="2" height="2" fill="#9bc56c" /><rect x="14" y="4" width="2" height="2" fill="#9bc56c" /><rect x="0" y="6" width="2" height="2" fill="#659659" /><rect x="2" y="6" width="2" height="2" fill="#9bc56c" /><rect x="4" y="6" width="2" height="2" fill="#659659" /><rect x="6" y="6" width="2" height="2" fill="#659659" /><rect x="12" y="6" width="2" height="2" fill="#427453" /><rect x="2" y="8" width="2" height="2" fill="#659659" /><rect x="4" y="8" width="2" height="2" fill="#659659" /><rect x="6" y="8" width="2" height="2" fill="#659659" /><rect x="12" y="8" width="2" height="2" fill="#427453" /><rect x="6" y="10" width="2" height="2" fill="#427453" /><rect x="10" y="10" width="2" height="2" fill="#427453" /><rect x="8" y="12" width="2" height="2" fill="#427453" /><rect x="8" y="14" width="2" height="2" fill="#427453" /></g>
+<g transform="translate(272.125,183)" shape-rendering="crispEdges"><rect x="12.25" y="0.0" width="1.75" height="1.75" fill="#9bc56c" /><rect x="14.0" y="0.0" width="1.75" height="1.75" fill="#9bc56c" /><rect x="10.5" y="1.75" width="1.75" height="1.75" fill="#9bc56c" /><rect x="12.25" y="1.75" width="1.75" height="1.75" fill="#d5de8c" /><rect x="14.0" y="1.75" width="1.75" height="1.75" fill="#9bc56c" /><rect x="1.75" y="3.5" width="1.75" height="1.75" fill="#659659" /><rect x="3.5" y="3.5" width="1.75" height="1.75" fill="#659659" /><rect x="10.5" y="3.5" width="1.75" height="1.75" fill="#9bc56c" /><rect x="12.25" y="3.5" width="1.75" height="1.75" fill="#9bc56c" /><rect x="0.0" y="5.25" width="1.75" height="1.75" fill="#659659" /><rect x="1.75" y="5.25" width="1.75" height="1.75" fill="#9bc56c" /><rect x="3.5" y="5.25" width="1.75" height="1.75" fill="#659659" /><rect x="5.25" y="5.25" width="1.75" height="1.75" fill="#659659" /><rect x="10.5" y="5.25" width="1.75" height="1.75" fill="#427453" /><rect x="1.75" y="7.0" width="1.75" height="1.75" fill="#659659" /><rect x="3.5" y="7.0" width="1.75" height="1.75" fill="#659659" /><rect x="5.25" y="7.0" width="1.75" height="1.75" fill="#659659" /><rect x="10.5" y="7.0" width="1.75" height="1.75" fill="#427453" /><rect x="5.25" y="8.75" width="1.75" height="1.75" fill="#427453" /><rect x="8.75" y="8.75" width="1.75" height="1.75" fill="#427453" /><rect x="7.0" y="10.5" width="1.75" height="1.75" fill="#427453" /><rect x="7.0" y="12.25" width="1.75" height="1.75" fill="#427453" /></g>
+<rect x="274" y="200" width="12" height="5" fill="#d3bd86" />
+<text x="280" y="203.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D4</text>
 </g>
 <g><title>C5: empty</title>
 <polygon points="322,191 341,200 322,209 303,200" fill="#4d7048" />
@@ -726,6 +774,8 @@
 <polygon points="322,195 331,199 333,198 324,194" fill="#956a48" />
 <rect x="320" y="195" width="5" height="1" fill="#bd9765" />
 <rect x="322" y="193" width="1" height="5" fill="#bd9765" />
+<rect x="316" y="200" width="12" height="5" fill="#d3bd86" />
+<text x="322" y="203.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C5</text>
 </g>
 <g><title>B6: empty</title>
 <polygon points="364,191 383,200 364,209 345,200" fill="#4d7048" />
@@ -736,6 +786,8 @@
 <polygon points="364,195 373,199 375,198 366,194" fill="#956a48" />
 <rect x="362" y="195" width="5" height="1" fill="#bd9765" />
 <rect x="364" y="193" width="1" height="5" fill="#bd9765" />
+<rect x="358" y="200" width="12" height="5" fill="#d3bd86" />
+<text x="364" y="203.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B6</text>
 </g>
 <g><title>A7: empty</title>
 <polygon points="406,191 425,200 406,209 387,200" fill="#4d7048" />
@@ -746,6 +798,8 @@
 <polygon points="406,195 415,199 417,198 408,194" fill="#956a48" />
 <rect x="404" y="195" width="5" height="1" fill="#bd9765" />
 <rect x="406" y="193" width="1" height="5" fill="#bd9765" />
+<rect x="400" y="200" width="12" height="5" fill="#d3bd86" />
+<text x="406" y="203.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A7</text>
 </g>
 <g><title>F3: empty</title>
 <polygon points="217,202 236,211 217,220 198,211" fill="#4d7048" />
@@ -756,6 +810,8 @@
 <polygon points="217,206 226,210 228,209 219,205" fill="#956a48" />
 <rect x="215" y="206" width="5" height="1" fill="#bd9765" />
 <rect x="217" y="204" width="1" height="5" fill="#bd9765" />
+<rect x="211" y="211" width="12" height="5" fill="#d3bd86" />
+<text x="217" y="214.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F3</text>
 </g>
 <g><title>E4: empty</title>
 <polygon points="259,202 278,211 259,220 240,211" fill="#4d7048" />
@@ -766,6 +822,8 @@
 <polygon points="259,206 268,210 270,209 261,205" fill="#956a48" />
 <rect x="257" y="206" width="5" height="1" fill="#bd9765" />
 <rect x="259" y="204" width="1" height="5" fill="#bd9765" />
+<rect x="253" y="211" width="12" height="5" fill="#d3bd86" />
+<text x="259" y="214.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E4</text>
 </g>
 <g><title>D5: empty</title>
 <polygon points="301,202 320,211 301,220 282,211" fill="#4d7048" />
@@ -776,6 +834,8 @@
 <polygon points="301,206 310,210 312,209 303,205" fill="#956a48" />
 <rect x="299" y="206" width="5" height="1" fill="#bd9765" />
 <rect x="301" y="204" width="1" height="5" fill="#bd9765" />
+<rect x="295" y="211" width="12" height="5" fill="#d3bd86" />
+<text x="301" y="214.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D5</text>
 </g>
 <g><title>C6: empty</title>
 <polygon points="343,202 362,211 343,220 324,211" fill="#4d7048" />
@@ -786,6 +846,8 @@
 <polygon points="343,206 352,210 354,209 345,205" fill="#956a48" />
 <rect x="341" y="206" width="5" height="1" fill="#bd9765" />
 <rect x="343" y="204" width="1" height="5" fill="#bd9765" />
+<rect x="337" y="211" width="12" height="5" fill="#d3bd86" />
+<text x="343" y="214.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C6</text>
 </g>
 <g><title>B7: empty</title>
 <polygon points="385,202 404,211 385,220 366,211" fill="#4d7048" />
@@ -796,6 +858,8 @@
 <polygon points="385,206 394,210 396,209 387,205" fill="#956a48" />
 <rect x="383" y="206" width="5" height="1" fill="#bd9765" />
 <rect x="385" y="204" width="1" height="5" fill="#bd9765" />
+<rect x="379" y="211" width="12" height="5" fill="#d3bd86" />
+<text x="385" y="214.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B7</text>
 </g>
 <g><title>A8: empty</title>
 <polygon points="427,202 446,211 427,220 408,211" fill="#4d7048" />
@@ -806,6 +870,8 @@
 <polygon points="427,206 436,210 438,209 429,205" fill="#956a48" />
 <rect x="425" y="206" width="5" height="1" fill="#bd9765" />
 <rect x="427" y="204" width="1" height="5" fill="#bd9765" />
+<rect x="421" y="211" width="12" height="5" fill="#d3bd86" />
+<text x="427" y="214.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A8</text>
 </g>
 <g><title>F4: empty</title>
 <polygon points="238,213 257,222 238,231 219,222" fill="#4d7048" />
@@ -816,6 +882,8 @@
 <polygon points="238,217 247,221 249,220 240,216" fill="#956a48" />
 <rect x="236" y="217" width="5" height="1" fill="#bd9765" />
 <rect x="238" y="215" width="1" height="5" fill="#bd9765" />
+<rect x="232" y="222" width="12" height="5" fill="#d3bd86" />
+<text x="238" y="225.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F4</text>
 </g>
 <g><title>E5: empty</title>
 <polygon points="280,213 299,222 280,231 261,222" fill="#4d7048" />
@@ -826,6 +894,8 @@
 <polygon points="280,217 289,221 291,220 282,216" fill="#956a48" />
 <rect x="278" y="217" width="5" height="1" fill="#bd9765" />
 <rect x="280" y="215" width="1" height="5" fill="#bd9765" />
+<rect x="274" y="222" width="12" height="5" fill="#d3bd86" />
+<text x="280" y="225.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E5</text>
 </g>
 <g><title>D6: empty</title>
 <polygon points="322,213 341,222 322,231 303,222" fill="#4d7048" />
@@ -836,6 +906,8 @@
 <polygon points="322,217 331,221 333,220 324,216" fill="#956a48" />
 <rect x="320" y="217" width="5" height="1" fill="#bd9765" />
 <rect x="322" y="215" width="1" height="5" fill="#bd9765" />
+<rect x="316" y="222" width="12" height="5" fill="#d3bd86" />
+<text x="322" y="225.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D6</text>
 </g>
 <g><title>C7: empty</title>
 <polygon points="364,213 383,222 364,231 345,222" fill="#4d7048" />
@@ -846,6 +918,8 @@
 <polygon points="364,217 373,221 375,220 366,216" fill="#956a48" />
 <rect x="362" y="217" width="5" height="1" fill="#bd9765" />
 <rect x="364" y="215" width="1" height="5" fill="#bd9765" />
+<rect x="358" y="222" width="12" height="5" fill="#d3bd86" />
+<text x="364" y="225.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C7</text>
 </g>
 <g><title>B8: empty</title>
 <polygon points="406,213 425,222 406,231 387,222" fill="#4d7048" />
@@ -856,6 +930,8 @@
 <polygon points="406,217 415,221 417,220 408,216" fill="#956a48" />
 <rect x="404" y="217" width="5" height="1" fill="#bd9765" />
 <rect x="406" y="215" width="1" height="5" fill="#bd9765" />
+<rect x="400" y="222" width="12" height="5" fill="#d3bd86" />
+<text x="406" y="225.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B8</text>
 </g>
 <g><title>F5: empty</title>
 <polygon points="259,224 278,233 259,242 240,233" fill="#4d7048" />
@@ -866,6 +942,8 @@
 <polygon points="259,228 268,232 270,231 261,227" fill="#956a48" />
 <rect x="257" y="228" width="5" height="1" fill="#bd9765" />
 <rect x="259" y="226" width="1" height="5" fill="#bd9765" />
+<rect x="253" y="233" width="12" height="5" fill="#d3bd86" />
+<text x="259" y="236.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F5</text>
 </g>
 <g><title>E6: empty</title>
 <polygon points="301,224 320,233 301,242 282,233" fill="#4d7048" />
@@ -876,6 +954,8 @@
 <polygon points="301,228 310,232 312,231 303,227" fill="#956a48" />
 <rect x="299" y="228" width="5" height="1" fill="#bd9765" />
 <rect x="301" y="226" width="1" height="5" fill="#bd9765" />
+<rect x="295" y="233" width="12" height="5" fill="#d3bd86" />
+<text x="301" y="236.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E6</text>
 </g>
 <g><title>D7: empty</title>
 <polygon points="343,224 362,233 343,242 324,233" fill="#4d7048" />
@@ -886,6 +966,8 @@
 <polygon points="343,228 352,232 354,231 345,227" fill="#956a48" />
 <rect x="341" y="228" width="5" height="1" fill="#bd9765" />
 <rect x="343" y="226" width="1" height="5" fill="#bd9765" />
+<rect x="337" y="233" width="12" height="5" fill="#d3bd86" />
+<text x="343" y="236.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D7</text>
 </g>
 <g><title>C8: empty</title>
 <polygon points="385,224 404,233 385,242 366,233" fill="#4d7048" />
@@ -896,6 +978,8 @@
 <polygon points="385,228 394,232 396,231 387,227" fill="#956a48" />
 <rect x="383" y="228" width="5" height="1" fill="#bd9765" />
 <rect x="385" y="226" width="1" height="5" fill="#bd9765" />
+<rect x="379" y="233" width="12" height="5" fill="#d3bd86" />
+<text x="385" y="236.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C8</text>
 </g>
 <g><title>F6: empty</title>
 <polygon points="280,235 299,244 280,253 261,244" fill="#4d7048" />
@@ -906,6 +990,8 @@
 <polygon points="280,239 289,243 291,242 282,238" fill="#956a48" />
 <rect x="278" y="239" width="5" height="1" fill="#bd9765" />
 <rect x="280" y="237" width="1" height="5" fill="#bd9765" />
+<rect x="274" y="244" width="12" height="5" fill="#d3bd86" />
+<text x="280" y="247.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F6</text>
 </g>
 <g><title>E7: empty</title>
 <polygon points="322,235 341,244 322,253 303,244" fill="#4d7048" />
@@ -916,6 +1002,8 @@
 <polygon points="322,239 331,243 333,242 324,238" fill="#956a48" />
 <rect x="320" y="239" width="5" height="1" fill="#bd9765" />
 <rect x="322" y="237" width="1" height="5" fill="#bd9765" />
+<rect x="316" y="244" width="12" height="5" fill="#d3bd86" />
+<text x="322" y="247.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E7</text>
 </g>
 <g><title>D8: empty</title>
 <polygon points="364,235 383,244 364,253 345,244" fill="#4d7048" />
@@ -926,6 +1014,8 @@
 <polygon points="364,239 373,243 375,242 366,238" fill="#956a48" />
 <rect x="362" y="239" width="5" height="1" fill="#bd9765" />
 <rect x="364" y="237" width="1" height="5" fill="#bd9765" />
+<rect x="358" y="244" width="12" height="5" fill="#d3bd86" />
+<text x="364" y="247.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D8</text>
 </g>
 <g><title>F7: empty</title>
 <polygon points="301,246 320,255 301,264 282,255" fill="#4d7048" />
@@ -936,6 +1026,8 @@
 <polygon points="301,250 310,254 312,253 303,249" fill="#956a48" />
 <rect x="299" y="250" width="5" height="1" fill="#bd9765" />
 <rect x="301" y="248" width="1" height="5" fill="#bd9765" />
+<rect x="295" y="255" width="12" height="5" fill="#d3bd86" />
+<text x="301" y="258.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F7</text>
 </g>
 <g><title>E8: empty</title>
 <polygon points="343,246 362,255 343,264 324,255" fill="#4d7048" />
@@ -946,6 +1038,8 @@
 <polygon points="343,250 352,254 354,253 345,249" fill="#956a48" />
 <rect x="341" y="250" width="5" height="1" fill="#bd9765" />
 <rect x="343" y="248" width="1" height="5" fill="#bd9765" />
+<rect x="337" y="255" width="12" height="5" fill="#d3bd86" />
+<text x="343" y="258.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E8</text>
 </g>
 <g><title>F8: empty</title>
 <polygon points="322,257 341,266 322,275 303,266" fill="#4d7048" />
@@ -956,151 +1050,9 @@
 <polygon points="322,261 331,265 333,264 324,260" fill="#956a48" />
 <rect x="320" y="261" width="5" height="1" fill="#bd9765" />
 <rect x="322" y="259" width="1" height="5" fill="#bd9765" />
+<rect x="316" y="266" width="12" height="5" fill="#d3bd86" />
+<text x="322" y="269.8" fill="#473f37" font-size="3.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F8</text>
 </g>
-<rect x="279" y="134" width="2" height="6" fill="#775d45" />
-<rect x="273" y="137" width="14" height="7" fill="#d3bd86" />
-<text x="280" y="142.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A1</text>
-<rect x="258" y="145" width="2" height="6" fill="#775d45" />
-<rect x="252" y="148" width="14" height="7" fill="#d3bd86" />
-<text x="259" y="153.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B1</text>
-<rect x="300" y="145" width="2" height="6" fill="#775d45" />
-<rect x="294" y="148" width="14" height="7" fill="#d3bd86" />
-<text x="301" y="153.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A2</text>
-<rect x="237" y="156" width="2" height="6" fill="#775d45" />
-<rect x="231" y="159" width="14" height="7" fill="#d3bd86" />
-<text x="238" y="164.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C1</text>
-<rect x="279" y="156" width="2" height="6" fill="#775d45" />
-<rect x="273" y="159" width="14" height="7" fill="#d3bd86" />
-<text x="280" y="164.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B2</text>
-<rect x="321" y="156" width="2" height="6" fill="#775d45" />
-<rect x="315" y="159" width="14" height="7" fill="#d3bd86" />
-<text x="322" y="164.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A3</text>
-<rect x="216" y="167" width="2" height="6" fill="#775d45" />
-<rect x="210" y="170" width="14" height="7" fill="#d3bd86" />
-<text x="217" y="175.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D1</text>
-<rect x="258" y="167" width="2" height="6" fill="#775d45" />
-<rect x="252" y="170" width="14" height="7" fill="#d3bd86" />
-<text x="259" y="175.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C2</text>
-<rect x="300" y="167" width="2" height="6" fill="#775d45" />
-<rect x="294" y="170" width="14" height="7" fill="#d3bd86" />
-<text x="301" y="175.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B3</text>
-<rect x="342" y="167" width="2" height="6" fill="#775d45" />
-<rect x="336" y="170" width="14" height="7" fill="#d3bd86" />
-<text x="343" y="175.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A4</text>
-<rect x="195" y="178" width="2" height="6" fill="#775d45" />
-<rect x="189" y="181" width="14" height="7" fill="#d3bd86" />
-<text x="196" y="186.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E1</text>
-<rect x="237" y="178" width="2" height="6" fill="#775d45" />
-<rect x="231" y="181" width="14" height="7" fill="#d3bd86" />
-<text x="238" y="186.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D2</text>
-<rect x="279" y="178" width="2" height="6" fill="#775d45" />
-<rect x="273" y="181" width="14" height="7" fill="#d3bd86" />
-<text x="280" y="186.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C3</text>
-<rect x="321" y="178" width="2" height="6" fill="#775d45" />
-<rect x="315" y="181" width="14" height="7" fill="#d3bd86" />
-<text x="322" y="186.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B4</text>
-<rect x="363" y="178" width="2" height="6" fill="#775d45" />
-<rect x="357" y="181" width="14" height="7" fill="#d3bd86" />
-<text x="364" y="186.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A5</text>
-<rect x="174" y="189" width="2" height="6" fill="#775d45" />
-<rect x="168" y="192" width="14" height="7" fill="#d3bd86" />
-<text x="175" y="197.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F1</text>
-<rect x="216" y="189" width="2" height="6" fill="#775d45" />
-<rect x="210" y="192" width="14" height="7" fill="#d3bd86" />
-<text x="217" y="197.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E2</text>
-<rect x="258" y="189" width="2" height="6" fill="#775d45" />
-<rect x="252" y="192" width="14" height="7" fill="#d3bd86" />
-<text x="259" y="197.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D3</text>
-<rect x="300" y="189" width="2" height="6" fill="#775d45" />
-<rect x="294" y="192" width="14" height="7" fill="#d3bd86" />
-<text x="301" y="197.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C4</text>
-<rect x="342" y="189" width="2" height="6" fill="#775d45" />
-<rect x="336" y="192" width="14" height="7" fill="#d3bd86" />
-<text x="343" y="197.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B5</text>
-<rect x="384" y="189" width="2" height="6" fill="#775d45" />
-<rect x="378" y="192" width="14" height="7" fill="#d3bd86" />
-<text x="385" y="197.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A6</text>
-<rect x="195" y="200" width="2" height="6" fill="#775d45" />
-<rect x="189" y="203" width="14" height="7" fill="#d3bd86" />
-<text x="196" y="208.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F2</text>
-<rect x="237" y="200" width="2" height="6" fill="#775d45" />
-<rect x="231" y="203" width="14" height="7" fill="#d3bd86" />
-<text x="238" y="208.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E3</text>
-<rect x="279" y="200" width="2" height="6" fill="#775d45" />
-<rect x="273" y="203" width="14" height="7" fill="#d3bd86" />
-<text x="280" y="208.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D4</text>
-<rect x="321" y="200" width="2" height="6" fill="#775d45" />
-<rect x="315" y="203" width="14" height="7" fill="#d3bd86" />
-<text x="322" y="208.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C5</text>
-<rect x="363" y="200" width="2" height="6" fill="#775d45" />
-<rect x="357" y="203" width="14" height="7" fill="#d3bd86" />
-<text x="364" y="208.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B6</text>
-<rect x="405" y="200" width="2" height="6" fill="#775d45" />
-<rect x="399" y="203" width="14" height="7" fill="#d3bd86" />
-<text x="406" y="208.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A7</text>
-<rect x="216" y="211" width="2" height="6" fill="#775d45" />
-<rect x="210" y="214" width="14" height="7" fill="#d3bd86" />
-<text x="217" y="219.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F3</text>
-<rect x="258" y="211" width="2" height="6" fill="#775d45" />
-<rect x="252" y="214" width="14" height="7" fill="#d3bd86" />
-<text x="259" y="219.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E4</text>
-<rect x="300" y="211" width="2" height="6" fill="#775d45" />
-<rect x="294" y="214" width="14" height="7" fill="#d3bd86" />
-<text x="301" y="219.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D5</text>
-<rect x="342" y="211" width="2" height="6" fill="#775d45" />
-<rect x="336" y="214" width="14" height="7" fill="#d3bd86" />
-<text x="343" y="219.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C6</text>
-<rect x="384" y="211" width="2" height="6" fill="#775d45" />
-<rect x="378" y="214" width="14" height="7" fill="#d3bd86" />
-<text x="385" y="219.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B7</text>
-<rect x="426" y="211" width="2" height="6" fill="#775d45" />
-<rect x="420" y="214" width="14" height="7" fill="#d3bd86" />
-<text x="427" y="219.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">A8</text>
-<rect x="237" y="222" width="2" height="6" fill="#775d45" />
-<rect x="231" y="225" width="14" height="7" fill="#d3bd86" />
-<text x="238" y="230.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F4</text>
-<rect x="279" y="222" width="2" height="6" fill="#775d45" />
-<rect x="273" y="225" width="14" height="7" fill="#d3bd86" />
-<text x="280" y="230.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E5</text>
-<rect x="321" y="222" width="2" height="6" fill="#775d45" />
-<rect x="315" y="225" width="14" height="7" fill="#d3bd86" />
-<text x="322" y="230.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D6</text>
-<rect x="363" y="222" width="2" height="6" fill="#775d45" />
-<rect x="357" y="225" width="14" height="7" fill="#d3bd86" />
-<text x="364" y="230.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C7</text>
-<rect x="405" y="222" width="2" height="6" fill="#775d45" />
-<rect x="399" y="225" width="14" height="7" fill="#d3bd86" />
-<text x="406" y="230.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">B8</text>
-<rect x="258" y="233" width="2" height="6" fill="#775d45" />
-<rect x="252" y="236" width="14" height="7" fill="#d3bd86" />
-<text x="259" y="241.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F5</text>
-<rect x="300" y="233" width="2" height="6" fill="#775d45" />
-<rect x="294" y="236" width="14" height="7" fill="#d3bd86" />
-<text x="301" y="241.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E6</text>
-<rect x="342" y="233" width="2" height="6" fill="#775d45" />
-<rect x="336" y="236" width="14" height="7" fill="#d3bd86" />
-<text x="343" y="241.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D7</text>
-<rect x="384" y="233" width="2" height="6" fill="#775d45" />
-<rect x="378" y="236" width="14" height="7" fill="#d3bd86" />
-<text x="385" y="241.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">C8</text>
-<rect x="279" y="244" width="2" height="6" fill="#775d45" />
-<rect x="273" y="247" width="14" height="7" fill="#d3bd86" />
-<text x="280" y="252.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F6</text>
-<rect x="321" y="244" width="2" height="6" fill="#775d45" />
-<rect x="315" y="247" width="14" height="7" fill="#d3bd86" />
-<text x="322" y="252.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E7</text>
-<rect x="363" y="244" width="2" height="6" fill="#775d45" />
-<rect x="357" y="247" width="14" height="7" fill="#d3bd86" />
-<text x="364" y="252.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">D8</text>
-<rect x="300" y="255" width="2" height="6" fill="#775d45" />
-<rect x="294" y="258" width="14" height="7" fill="#d3bd86" />
-<text x="301" y="263.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F7</text>
-<rect x="342" y="255" width="2" height="6" fill="#775d45" />
-<rect x="336" y="258" width="14" height="7" fill="#d3bd86" />
-<text x="343" y="263.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">E8</text>
-<rect x="321" y="266" width="2" height="6" fill="#775d45" />
-<rect x="315" y="269" width="14" height="7" fill="#d3bd86" />
-<text x="322" y="274.5" fill="#473f37" font-size="4.5" font-family="ui-monospace,Menlo,Consolas,monospace" text-anchor="middle">F8</text>
 <polygon points="434,242 448,235 464,237 478,244 478,253 459,262 446,260 431,252" fill="#3d6c69" />
 <polygon points="438,242 449,239 463,241 472,246 469,252 457,258 444,254 437,250" fill="#659e9d" />
 <rect x="443" y="244" width="15" height="2" fill="#96c3b8" />

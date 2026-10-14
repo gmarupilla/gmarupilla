@@ -187,7 +187,6 @@ def draw_garden(state, day, weather):
         for c in range(len(COLUMNS)):
             x,y=280+(c-r)*21,132+(c+r)*11
             plots.append((y,x,f'{row}{c+1}',r,c))
-    plot_markers=[]
     for y,x,plot,r,c in sorted(plots):
         plant=state['plots'].get(plot)
         title=f'{plot}: {plant["seed"]}, caretaker {plant["user"]}' if plant else f'{plot}: empty'
@@ -198,13 +197,13 @@ def draw_garden(state, day, weather):
             age=max(0,(day-date.fromisoformat(plant['planted'])).days)
             if age == 0:
                 pieces.append(diamond(x,y-1,13,5,'#55774c'))
-            pieces.append(sprite('sprout' if age==0 else plant['seed'],x,y-1,2 if age==0 else (1 if age<4 else 1.5)))
+            pieces.append(sprite('sprout' if age==0 else plant['seed'],x,y-1,1.75 if age==0 else (1 if age<4 else 1.5)))
         else:
             pieces += [rect(x-2,y-3,5,1,'#bd9765'),rect(x,y-5,1,5,'#bd9765')]
-        # Centre each plaque on its own plot's front tip.
-        pieces.append('</g>')
-        plot_markers += [rect(x-1,y+2,2,6,'#775d45'),rect(x-7,y+5,14,7,'#d3bd86'),text(x,y+10.5,plot,4.5,'#473f37','text-anchor="middle"')]
-    pieces.extend(plot_markers)
+        # Set a compact label into each plot's front edge.
+        # Keep the plaque in the same depth layer as its plot. Drawing every
+        # plaque last lets a rear plot's label cover the next plant's leaves.
+        pieces += [rect(x-6,y+2,12,5,'#d3bd86'),text(x,y+5.8,plot,3.5,'#473f37','text-anchor="middle"'),'</g>']
     # Pond and spillway, at the outside edge of the island.
     pieces += [poly([(434,242),(448,235),(464,237),(478,244),(478,253),(459,262),(446,260),(431,252)],'#3d6c69'),
                poly([(438,242),(449,239),(463,241),(472,246),(469,252),(457,258),(444,254),(437,250)],'#659e9d'),
