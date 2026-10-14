@@ -4,7 +4,7 @@ I build scientific software, work with maps and models, and follow the occasiona
 
 [Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)
 
-![A shared island garden. Choose an empty plot in the table below.](assets/garden-71e2b21c324b.svg)
+![A shared island garden. Choose an empty plot in the table below.](assets/garden-57cb127aa035.svg)
 
 ### Leave a little life here
 
@@ -12,7 +12,7 @@ Choose an empty plot below. Pick a seed in the form, then submit the issue. The 
 
 | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |---|---|---|---|---|---|---|---|---|
-| **A** | [＋ A1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A1) | [＋ A2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A2) | [＋ A3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A3) | [＋ A4](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A4) | [＋ A5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A5) | [＋ A6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A6) | [＋ A7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A7) | [＋ A8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A8) |
+| **A** | [＋ A1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A1) | Oak | [＋ A3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A3) | [＋ A4](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A4) | [＋ A5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A5) | [＋ A6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A6) | [＋ A7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A7) | [＋ A8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=A8) |
 | **B** | [＋ B1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=B1) | [＋ B2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=B2) | [＋ B3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=B3) | [＋ B4](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=B4) | [＋ B5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=B5) | [＋ B6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=B6) | [＋ B7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=B7) | [＋ B8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=B8) |
 | **C** | [＋ C1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C1) | [＋ C2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C2) | [＋ C3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C3) | [＋ C4](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C4) | [＋ C5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C5) | [＋ C6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C6) | [＋ C7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C7) | [＋ C8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C8) |
 | **D** | [＋ D1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D1) | [＋ D2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D2) | [＋ D3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D3) | Oak | [＋ D5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D5) | [＋ D6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D6) | [＋ D7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D7) | [＋ D8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D8) |
@@ -30,10 +30,12 @@ The garden refreshes daily and after planting requests. Weather is part of this 
 
 | Plot | Plant | Caretaker | Planted (UTC) |
 |---|---|---|---|
+| A2 | Oak | @gmarupilla | 2026-10-14 |
 | D4 | Oak | @gmarupilla | 2026-10-14 |
 
 **Recent requests**
 
+- [#2](https://github.com/gmarupilla/gmarupilla/issues/2): Oak planted in A2.
 - [#1](https://github.com/gmarupilla/gmarupilla/issues/1): Oak planted in D4 during setup; daily allowance restored.
 
 </details>
