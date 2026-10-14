@@ -4,7 +4,7 @@ I build scientific software, work with maps and models, and follow the occasiona
 
 [Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)
 
-![A shared island garden. Choose an empty plot in the table below.](assets/garden-04b1a97ac0fe.svg)
+![A shared island garden. Choose an empty plot in the table below.](assets/garden-32be8184c694.svg)
 
 ### Leave a little life here
 
@@ -34,8 +34,7 @@ The garden refreshes daily and after planting requests. Weather is part of this 
 
 **Recent requests**
 
-- [#2](https://github.com/gmarupilla/gmarupilla/issues/2): One plant per person per UTC day. Come back tomorrow.
-- [#1](https://github.com/gmarupilla/gmarupilla/issues/1): Oak planted in D4.
+- [#1](https://github.com/gmarupilla/gmarupilla/issues/1): Oak planted in D4 during setup; daily allowance restored.
 
 </details>
 

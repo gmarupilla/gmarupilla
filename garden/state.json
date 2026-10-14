@@ -14,20 +14,13 @@
       "accepted": true,
       "plot": "D4",
       "seed": "Oak",
-      "reason": "Oak planted in D4."
-    },
-    "2": {
-      "user": "gmarupilla",
-      "date": "2026-10-14",
-      "accepted": false,
-      "reason": "One plant per person per UTC day. Come back tomorrow."
+      "reason": "Oak planted in D4 during setup; daily allowance restored.",
+      "setup_plant": true
     }
   },
   "gardeners": {
     "gmarupilla": 1
   },
-  "last_planted": {
-    "gmarupilla": "2026-10-14"
-  },
+  "last_planted": {},
   "composted": 0
 }

@@ -196,7 +196,9 @@ def draw_garden(state, day, weather):
             pieces.append(poly([(x+offset-7,y-3),(x+offset+2,y+1),(x+offset+4,y),(x+offset-5,y-4)],'#956a48'))
         if plant:
             age=max(0,(day-date.fromisoformat(plant['planted'])).days)
-            pieces.append(sprite('sprout' if age==0 else plant['seed'],x,y-1,1 if age<4 else 1.5))
+            if age == 0:
+                pieces.append(diamond(x,y-1,13,5,'#55774c'))
+            pieces.append(sprite('sprout' if age==0 else plant['seed'],x,y-1,2 if age==0 else (1 if age<4 else 1.5)))
         else:
             pieces += [rect(x-2,y-3,5,1,'#bd9765'),rect(x,y-5,1,5,'#bd9765')]
         # Plot IDs use small stakes on the right side, away from plant canopies.
