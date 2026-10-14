@@ -99,7 +99,7 @@ def readme(state, day):
     lines = ['# Hey, I’m Akhil. Plant something before you leave.', '',
              'I build scientific software, work with maps and models, and follow the occasional infrastructure rabbit hole.', '',
              '[Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)', '',
-             f'![A shared island garden. Choose an empty plot in the table below.](assets/garden.svg?v={image_version})', '',
+             f'![A shared island garden. Choose an empty plot in the table below.](assets/garden-{image_version}.svg)', '',
              '### Leave a little life here', '',
              'Choose an empty plot below. Pick a seed in the form, then submit the issue. The garden updates after your request runs.', '',
              '| | ' + ' | '.join(map(str, COLUMNS)) + ' |', '|' + '---|' * (len(COLUMNS)+1)]
@@ -141,7 +141,14 @@ def readme(state, day):
 def render(state, day, output):
     assets=output/'assets'
     assets.mkdir(parents=True,exist_ok=True)
-    (assets/'garden.svg').write_text(draw(state,day))
+    artwork = draw(state,day)
+    image_version = hashlib.sha256(artwork.encode()).hexdigest()[:12]
+    (assets/'garden.svg').write_text(artwork)
+    versioned_name = f'garden-{image_version}.svg'
+    (assets/versioned_name).write_text(artwork)
+    for previous in assets.glob('garden-*.svg'):
+        if re.fullmatch(r'garden-[0-9a-f]{12}\.svg', previous.name) and previous.name != versioned_name:
+            previous.unlink()
     for filename,name,subtitle,kind in [
         ('agroterraflow','AgroTerraFlow','Agricultural suitability, with uncertainty included.','terrain'),
         ('yieldcast','YieldCast','How we test a forecast changes what we learn.','yield'),
