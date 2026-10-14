@@ -12,10 +12,10 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from garden_art import draw_garden, project_cover
+from garden_layout import ROWS, COLUMNS, PLOTS
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'gmarupilla/gmarupilla'
-PLOTS = [f'{row}{col}' for row in 'ABCD' for col in range(1, 7)]
 SEEDS = ('Oak', 'Pine', 'Sunflower', 'Tulip', 'Mushroom', 'Wheat')
 WEATHER = ('Clear skies', 'Passing clouds', 'Soft rain', 'Golden light')
 
@@ -66,7 +66,7 @@ def process(state, issues, day):
         if key in state['requests']:
             continue
         user = issue['user']['login']
-        fields = re.fullmatch(r'\s*### Plot\s+([A-D][1-6])\s+### Seed\s+(Oak|Pine|Sunflower|Tulip|Mushroom|Wheat)\s*', issue.get('body') or '')
+        fields = re.fullmatch(r'\s*### Plot\s+([A-F][1-8])\s+### Seed\s+(Oak|Pine|Sunflower|Tulip|Mushroom|Wheat)\s*', issue.get('body') or '')
         result = {'user': user, 'date': str(day), 'accepted': False}
         if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9-]{0,38}', user):
             result['reason'] = 'A personal GitHub account is required.'
@@ -100,10 +100,10 @@ def readme(state, day):
              '![A shared island garden. Choose an empty plot in the table below.](assets/garden.svg)', '',
              '### Leave a little life here', '',
              'Choose an empty plot below. Pick a seed in the form, then submit the issue. The garden updates after your request runs.', '',
-             '| | 1 | 2 | 3 | 4 | 5 | 6 |', '|---|---|---|---|---|---|---|']
-    for row in 'ABCD':
+             '| | ' + ' | '.join(map(str, COLUMNS)) + ' |', '|' + '---|' * (len(COLUMNS)+1)]
+    for row in ROWS:
         cells = []
-        for c in range(1,7):
+        for c in COLUMNS:
             plot=f'{row}{c}'
             plant=state['plots'].get(plot)
             if plant:
@@ -172,11 +172,11 @@ td,th{text-align:center;border:1px solid #34433c;padding:8px}.plot{color:#bbd2a9
 <img src="assets/garden.svg" alt="An example community garden">
 <h2>Leave a little life here</h2><p>Choose an empty plot. Pick a seed in the form, then submit the issue.</p>
 <table><tr><th></th>''']
-    page.extend(f'<th>{c}</th>' for c in range(1,7))
+    page.extend(f'<th>{c}</th>' for c in COLUMNS)
     page.append('</tr>')
-    for row in 'ABCD':
+    for row in ROWS:
         page.append(f'<tr><th>{row}</th>')
-        for c in range(1,7):
+        for c in COLUMNS:
             plot=f'{row}{c}'
             plant=state['plots'].get(plot)
             label=plant['seed'] if plant else f'＋ {plot}'
@@ -205,7 +205,7 @@ def main():
         state=copy.deepcopy(state)
         for i,plot in enumerate(PLOTS):
             if i%4 != 1:
-                state['plots'][plot]={'seed':SEEDS[(i+i//6)%6], 'user':'demo-gardener', 'planted':str(day-timedelta(days=i%7))}
+                state['plots'][plot]={'seed':SEEDS[(i+i//len(COLUMNS))%len(SEEDS)], 'user':'demo-gardener', 'planted':str(day-timedelta(days=i%7))}
         state['gardeners']={'demo-gardener':len(state['plots'])}
         render(state,day,ROOT/'preview')
         return

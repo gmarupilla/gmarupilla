@@ -53,9 +53,20 @@ class GardenTests(unittest.TestCase):
         for kind in ('terrain', 'yield', 'dry'):
             ET.fromstring(garden.cover('Name & test', 'Illustration', kind))
         readme = garden.readme(self.state, self.day)
-        self.assertEqual(readme.count('template=plant.yml'), 18)
-        self.assertIn('plot=D6', readme)
+        self.assertEqual(readme.count('template=plant.yml'), 42)
+        self.assertIn('plot=F8', readme)
         self.assertNotIn('plot=A1)', readme)
+
+    def test_expanded_grid_accepts_all_48_plots_and_rejects_outside(self):
+        issues = [self.issue(i+1, f'visitor-{i}', plot) for i, plot in enumerate(garden.PLOTS)]
+        issues += [self.issue(49, 'outside-1', 'G1'), self.issue(50, 'outside-2', 'A9')]
+        garden.process(self.state, issues, self.day)
+        self.assertEqual(len(self.state['plots']), 48)
+        self.assertTrue(self.state['requests']['48']['accepted'])
+        self.assertFalse(self.state['requests']['49']['accepted'])
+        self.assertFalse(self.state['requests']['50']['accepted'])
+        self.assertNotIn('template=plant.yml', garden.readme(self.state, self.day))
+        self.assertIn('48/48 GROWING', garden.draw(self.state, self.day))
 
 
 if __name__ == '__main__':

@@ -3,6 +3,8 @@ from datetime import date
 from html import escape
 import random
 
+from garden_layout import ROWS, COLUMNS, CAPACITY
+
 
 PALETTE = {
     'd': '#24483e', 'g': '#427453', 'm': '#659659', 'l': '#9bc56c',
@@ -118,8 +120,8 @@ def draw_garden(state, day, weather):
     top=[(91,178),(238,104),(280,105),(499,210),(505,226),
          (362,300),(324,305),(93,198)]
     pieces=[f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
-<title id="title">Tiny world — {n} of 24 garden plots planted</title>
-<desc id="desc">An original pixel-art island with a cottage, glowing lanterns, a waterfall and 24 planting plots. Use the labelled planting table below. Imaginary weather: {weather}.</desc>
+<title id="title">Tiny world — {n} of {CAPACITY} garden plots planted</title>
+<desc id="desc">An original pixel-art island with a cottage, glowing lanterns, a waterfall and {CAPACITY} planting plots. Use the labelled planting table below. Imaginary weather: {weather}.</desc>
 <defs>
   <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#101c2c"/><stop offset="1" stop-color="#244248"/></linearGradient>
   <radialGradient id="moon"><stop stop-color="#94b1b5" stop-opacity=".14"/><stop offset="1" stop-color="#94b1b5" stop-opacity="0"/></radialGradient>
@@ -141,6 +143,7 @@ def draw_garden(state, day, weather):
                poly([(501,53),(512,53),(512,58),(519,58),(519,78),(507,78),(507,74),(499,74),(499,66),(495,66),(495,58),(501,58)],'#172837'),cloud(493,96,.7,'.2')]
     pieces += [sprite('sprout',43,48,1.5),text(61,37,'TINY WORLD',15,'#f4e6ca','letter-spacing="3"'),
                text(61,53,'A garden we grow together.',8,'#99b2b6')]
+    pieces.append('<g transform="translate(-75,-12) scale(1.3,1.04)">')
     # Suspended rock, with stepped facets rather than smooth blobs.
     left=[(91,192),(333,301),(333,348),(311,348),(311,358),(269,347),(269,338),(239,338),(239,328),(207,320),(207,312),(178,306),(178,298),(146,282),(146,273),(122,263),(122,251),(105,242),(105,220),(91,214)]
     right=[(333,301),(505,219),(499,257),(487,257),(487,278),(470,283),(470,300),(445,309),(445,321),(411,330),(411,341),(371,350),(371,358),(333,348)]
@@ -180,20 +183,20 @@ def draw_garden(state, day, weather):
     pieces += [sprite('Pine',118,184,2),sprite('Pine',136,168,1.5),sprite('Oak',241,126,1.5)]
     # Garden plots follow the island's isometric grid and render back to front.
     plots=[]
-    for r,row in enumerate('ABCD'):
-        for c in range(6):
-            x,y=282+(c-r)*29,145+(c+r)*14
+    for r,row in enumerate(ROWS):
+        for c in range(len(COLUMNS)):
+            x,y=280+(c-r)*21,132+(c+r)*11
             plots.append((y,x,f'{row}{c+1}',r,c))
     plot_markers=[]
     for y,x,plot,r,c in sorted(plots):
         plant=state['plots'].get(plot)
         title=f'{plot}: {plant["seed"]}, caretaker {plant["user"]}' if plant else f'{plot}: empty'
-        pieces += [f'<g><title>{escape(title)}</title>',diamond(x,y+2,24,11,'#4d7048'),diamond(x,y,22,10,'#ae8c5a'),diamond(x,y-1,20,8,'#765640')]
-        for offset in (-9,-3,3,9):
+        pieces += [f'<g><title>{escape(title)}</title>',diamond(x,y+2,19,9,'#4d7048'),diamond(x,y,17,8,'#ae8c5a'),diamond(x,y-1,15,6,'#765640')]
+        for offset in (-5,1,7):
             pieces.append(poly([(x+offset-7,y-3),(x+offset+2,y+1),(x+offset+4,y),(x+offset-5,y-4)],'#956a48'))
         if plant:
             age=max(0,(day-date.fromisoformat(plant['planted'])).days)
-            pieces.append(sprite('sprout' if age==0 else plant['seed'],x,y-1,1.5 if age<4 else 2))
+            pieces.append(sprite('sprout' if age==0 else plant['seed'],x,y-1,1 if age<4 else 1.5))
         else:
             pieces += [rect(x-2,y-3,5,1,'#bd9765'),rect(x,y-5,1,5,'#bd9765')]
         # Plot IDs use small stakes on the right side, away from plant canopies.
@@ -224,7 +227,8 @@ def draw_garden(state, day, weather):
             pieces.append(rect(x,y,1,4,'#82afbd','opacity=".25"'))
     elif weather == 'Passing clouds':
         pieces += [cloud(331,98,.8,'.22'),cloud(58,119,.9,'.17')]
-    pieces += [rect(31,366,538,1,'#456064'),text(32,385,f'{n:02d}/24 GROWING',8,'#e5d8b9'),
+    pieces.append('</g>')
+    pieces += [rect(31,366,538,1,'#456064'),text(32,385,f'{n:02d}/{CAPACITY} GROWING',8,'#e5d8b9'),
                text(172,385,f'{len(state["gardeners"]):02d} GARDENERS',8,'#a7bdb4'),
                text(568,385,weather.upper(),8,'#a7bdb4','text-anchor="end"'),'</g></svg>']
     return '\n'.join(pieces)
