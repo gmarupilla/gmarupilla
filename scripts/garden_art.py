@@ -201,9 +201,9 @@ def draw_garden(state, day, weather):
             pieces.append(sprite('sprout' if age==0 else plant['seed'],x,y-1,2 if age==0 else (1 if age<4 else 1.5)))
         else:
             pieces += [rect(x-2,y-3,5,1,'#bd9765'),rect(x,y-5,1,5,'#bd9765')]
-        # Plot IDs use small stakes on the right side, away from plant canopies.
-        pieces += [rect(x+13,y+3,1,7,'#775d45'),'</g>']
-        plot_markers += [rect(x+9,y,12,6,'#d3bd86'),text(x+15,y+5,plot,4.5,'#473f37','text-anchor="middle"')]
+        # Centre each plaque on its own plot's front tip.
+        pieces.append('</g>')
+        plot_markers += [rect(x-1,y+2,2,6,'#775d45'),rect(x-7,y+5,14,7,'#d3bd86'),text(x,y+10.5,plot,4.5,'#473f37','text-anchor="middle"')]
     pieces.extend(plot_markers)
     # Pond and spillway, at the outside edge of the island.
     pieces += [poly([(434,242),(448,235),(464,237),(478,244),(478,253),(459,262),(446,260),(431,252)],'#3d6c69'),

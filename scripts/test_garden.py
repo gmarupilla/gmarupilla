@@ -1,9 +1,11 @@
 import copy
+import json
 from datetime import date, timedelta
 from pathlib import Path
 import re
 import tempfile
 import unittest
+from unittest.mock import patch
 import xml.etree.ElementTree as ET
 
 import garden
@@ -83,6 +85,15 @@ class GardenTests(unittest.TestCase):
             self.assertNotEqual(first, second)
             self.assertTrue((output/second).exists())
             self.assertFalse((output/first).exists())
+
+    def test_webhook_request_survives_a_stale_issue_listing(self):
+        issue = dict(self.issue(), title='garden: plant', state='open')
+        with tempfile.TemporaryDirectory() as folder:
+            event_path = Path(folder)/'event.json'
+            event_path.write_text(json.dumps({'issue': issue}))
+            with patch.dict(garden.os.environ, {'GITHUB_EVENT_NAME': 'issues', 'GITHUB_EVENT_PATH': str(event_path)}):
+                with patch.object(garden, 'api', return_value=[]):
+                    self.assertEqual(garden.open_requests(), [issue])
 
 
 if __name__ == '__main__':

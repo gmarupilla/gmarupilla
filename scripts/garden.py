@@ -44,6 +44,16 @@ def open_requests():
         items = api(f'issues?state=open&per_page=100&page={page}&sort=created&direction=asc')
         result.extend(i for i in items if 'pull_request' not in i and i['title'] == 'garden: plant')
         if len(items) < 100:
+            # Search/list endpoints can lag behind an opened or reopened webhook.
+            # Include the triggering issue so that a new request is never skipped.
+            event_path = os.environ.get('GITHUB_EVENT_PATH')
+            if os.environ.get('GITHUB_EVENT_NAME') == 'issues' and event_path:
+                triggering_issue = json.loads(Path(event_path).read_text()).get('issue', {})
+                if (triggering_issue.get('state') == 'open'
+                        and triggering_issue.get('title') == 'garden: plant'
+                        and 'pull_request' not in triggering_issue
+                        and triggering_issue.get('number') not in {i['number'] for i in result}):
+                    result.append(triggering_issue)
             return sorted(result, key=lambda i: i['number'])
         page += 1
 
