@@ -1,51 +1,62 @@
 # Tiny world
 
-The README contains an SVG island and links to a GitHub issue form. Visitors choose a plot and seed. Their public usernames appear beside their plants.
-
-The garden has 48 plots: six rows (A–F) and eight columns (1–8).
+The profile shows an animated clay garden. The eight beds contain 48 live plots:
+A–C across the back of each bed and D–F across the front. Visitors plant through
+the linked GitHub issue form. Their public usernames appear in the gardener table.
 
 ## Run locally
 
-Use Python 3.10 or later. No third-party packages are required.
+Use Python 3.10 or later and install the pinned renderer dependency:
 
 ```sh
+python3 -m pip install -r requirements.txt
 python3 scripts/garden.py render
 python3 scripts/garden.py preview
 ```
 
-`render` draws the real saved state. `preview` creates a separate example garden in the ignored `preview/` directory.
+`render` draws the saved state. `preview` creates an example garden in the ignored
+`preview/` folder. Example plants do not change the saved garden.
 
-Open `preview/index.html` to review the design. Its example plants do not change the real garden state.
+## Artwork and animation
 
-## Artwork
-
-`scripts/garden_art.py` draws the island, pixel sprites, and project covers. All artwork is original and self-contained SVG.
-
-`scripts/garden_layout.py` defines the shared plot grid. If you change the grid, also update the issue form description and request validation.
-
-Edit `SPRITES` and `PALETTE` to change the plants. Each plot and its label render together, from back to front. Rear labels cannot cover foreground plants.
-
-Fireflies have a subtle opacity animation. The SVG disables this animation when the viewer prefers reduced motion.
+- `garden/art/empty-world.gif` is the reusable animated landscape. Its beds are empty.
+- Transparent PNGs in `garden/art/` contain the plant sprites.
+- `garden/art/layout.json` maps each bed to its soil corners at 960 × 640 pixels.
+- `scripts/garden_animation.py` positions sprites from `garden/state.json`, applies
+  age-based growth, and composites every frame. It draws plots from back to front.
+- The GIF has a shared palette and loops indefinitely. The README also links to
+  `assets/garden-still.png` for a motion-free view.
+- The rendered filename hashes the state, date, renderer and artwork. This prevents
+  GitHub's image cache from showing an earlier planting state.
+- Artwork was created through Higgsfield. The source model and job IDs are recorded
+  in `garden/art/provenance.json`. Landscape trees outside the beds are scenery.
+- Daily renders use only local files and Pillow. They make no generation calls and
+  require no Higgsfield token or credits. Project covers remain SVG illustrations.
 
 ## Publish
 
-Merge the reviewed files into `main` in `gmarupilla/gmarupilla`. Enable Issues and GitHub Actions. The workflow requires `contents: write` and `issues: write`.
+Push to `main` in `gmarupilla/gmarupilla`. Enable Issues and GitHub Actions.
+The workflow requires `contents: write` and `issues: write`.
 
-Run **Tend the tiny world** manually once. Then submit one planting request. Verify that its workflow passes, the plant appears in the profile, and the issue closes.
+The daily schedule and planting webhooks run the renderer, save the state and
+artwork, then close processed requests. The source artwork is committed once;
+only the current generated GIF is retained in the working tree.
 
 ## Behaviour
 
 - All growth dates and daily planting limits use UTC.
-- Plants sprout immediately, grow after one day, and mature after four days.
-- Plants return to soil after 21 days. Their caretakers remain in the state history.
-- Weather follows a fixed four-day cycle. It does not use real weather data or affect growth.
-- The daily schedule refreshes growth and clears expired plots. GitHub can delay scheduled jobs.
-- Every run processes all open planting requests in issue-number order. This recovers requests when GitHub replaces pending workflow runs.
-- Each issue receives a saved decision. Retries do not plant twice.
-- A successful push must finish before processed issues close. Rejected requests also close; the README lists recent decisions.
-- Issue titles and bodies are read as data. They never become shell commands.
-- Unrelated issues remain open and do not trigger garden changes.
+- Each account can plant once per UTC day.
+- A new plant appears as a sprout, grows after one day and matures after four.
+- After 21 days, the plot returns to soil. Its caretaker remains in the history.
+- GitHub can delay scheduled jobs. The animation is continuous, but planting state
+  changes only when the workflow runs.
+- Each run processes all open planting requests in issue-number order and includes
+  the triggering webhook request if GitHub's issue listing has not caught up.
+- Each request has a saved decision. Retries cannot plant it twice.
+- A successful push must finish before requests close. Rejected requests also close;
+  the README lists recent decisions.
+- Issue content is data and never becomes a shell command.
+- Unrelated issues do not trigger the workflow.
 
-The workflow uses the repository's built-in token. No hosting account or external service is required. Project covers are illustrations, not measured research results.
-
-To pause the garden, disable **Tend the tiny world** in the Actions tab. To restore an earlier state, restore `garden/state.json` from Git history and run the renderer.
+To pause the garden, disable **Tend the tiny world** in Actions. To restore a prior
+planting state, restore `garden/state.json` from Git history and run the renderer.

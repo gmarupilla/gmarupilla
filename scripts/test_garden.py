@@ -77,11 +77,11 @@ class GardenTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             output = Path(folder)
             garden.render(self.state, self.day, output)
-            first = re.search(r'assets/garden-[0-9a-f]{12}\.svg', (output/'README.md').read_text())[0]
+            first = re.search(r'assets/garden-[0-9a-f]{12}\.gif', (output/'README.md').read_text())[0]
             self.assertTrue((output/first).exists())
             garden.process(self.state, [self.issue()], self.day)
             garden.render(self.state, self.day, output)
-            second = re.search(r'assets/garden-[0-9a-f]{12}\.svg', (output/'README.md').read_text())[0]
+            second = re.search(r'assets/garden-[0-9a-f]{12}\.gif', (output/'README.md').read_text())[0]
             self.assertNotEqual(first, second)
             self.assertTrue((output/second).exists())
             self.assertFalse((output/first).exists())

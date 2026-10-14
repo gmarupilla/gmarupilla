@@ -4,11 +4,15 @@ I build scientific software, work with maps and models, and follow the occasiona
 
 [Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)
 
-![A shared island garden. Choose an empty plot in the table below.](assets/garden-dbe12a7eeecc.svg)
+![A living island garden. Plants in the eight numbered beds reflect the current planting state.](assets/garden-a5674f581c97.gif)
+
+[View the still garden](assets/garden-still.png)
 
 ### Leave a little life here
 
 Choose an empty plot below. Pick a seed in the form, then submit the issue. The garden updates after your request runs.
+
+Beds are numbered 1–8. Each bed has six plots: A–C across the back, D–F across the front. Small labels mark the exact planting positions.
 
 | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |---|---|---|---|---|---|---|---|---|
@@ -23,7 +27,7 @@ Choose an empty plot below. Pick a seed in the form, then submit the issue. The 
 
 One plant per person per UTC day. Sprouts grow after one day and mature after four. After 21 days, they return to soil.
 
-The garden refreshes daily and after planting requests. Weather is part of this imaginary world.
+The scene loops continuously. Planting and growth refresh daily and after planting requests; the landscape trees outside the beds are scenery.
 
 <details>
 <summary>Meet the gardeners & recent planting requests</summary>
@@ -52,4 +56,4 @@ Also on the workbench: [TrialFlow-Agro](https://github.com/gmarupilla/trialflow-
 
 [![JOSS Reviews](https://joss.theoj.org/badges/reviewed_by/@gmarupilla)](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)
 
-<sub>Inspired by [Tim Burgan’s community chess](https://github.com/timburgan/timburgan). This garden uses original code and artwork.</sub>
+<sub>Inspired by [Tim Burgan’s community chess](https://github.com/timburgan/timburgan). Custom garden code with artwork created using Higgsfield.</sub>

@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Render a dependency-free SVG garden and reconcile GitHub planting requests."""
+"""Render the animated garden and reconcile GitHub planting requests."""
 import argparse
 import copy
 from datetime import date, datetime, timedelta, timezone
 from html import escape
-import hashlib
 import json
 import os
 from pathlib import Path
@@ -14,6 +13,7 @@ from urllib.request import Request, urlopen
 
 from garden_art import draw_garden, project_cover
 from garden_layout import ROWS, COLUMNS, PLOTS
+from garden_animation import render_animation, version as animation_version
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'gmarupilla/gmarupilla'
@@ -105,13 +105,15 @@ def cover(name, subtitle, kind):
 
 
 def readme(state, day):
-    image_version = hashlib.sha256(draw(state, day).encode()).hexdigest()[:12]
+    image_version = animation_version(state, day)
     lines = ['# Hey, I’m Akhil. Plant something before you leave.', '',
              'I build scientific software, work with maps and models, and follow the occasional infrastructure rabbit hole.', '',
              '[Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)', '',
-             f'![A shared island garden. Choose an empty plot in the table below.](assets/garden-{image_version}.svg)', '',
+             f'![A living island garden. Plants in the eight numbered beds reflect the current planting state.](assets/garden-{image_version}.gif)', '',
+             '[View the still garden](assets/garden-still.png)', '',
              '### Leave a little life here', '',
              'Choose an empty plot below. Pick a seed in the form, then submit the issue. The garden updates after your request runs.', '',
+             'Beds are numbered 1–8. Each bed has six plots: A–C across the back, D–F across the front. Small labels mark the exact planting positions.', '',
              '| | ' + ' | '.join(map(str, COLUMNS)) + ' |', '|' + '---|' * (len(COLUMNS)+1)]
     for row in ROWS:
         cells = []
@@ -126,7 +128,7 @@ def readme(state, day):
         lines.append('| **'+row+'** | '+' | '.join(cells)+' |')
     lines += ['', '**Seed shelf:** Oak · Pine · Sunflower · Tulip · Mushroom · Wheat', '',
               'One plant per person per UTC day. Sprouts grow after one day and mature after four. After 21 days, they return to soil.', '',
-              'The garden refreshes daily and after planting requests. Weather is part of this imaginary world.', '', '<details>', '<summary>Meet the gardeners & recent planting requests</summary>', '']
+              'The scene loops continuously. Planting and growth refresh daily and after planting requests; the landscape trees outside the beds are scenery.', '', '<details>', '<summary>Meet the gardeners & recent planting requests</summary>', '']
     if state['plots']:
         lines += ['| Plot | Plant | Caretaker | Planted (UTC) |','|---|---|---|---|']
         for plot in PLOTS:
@@ -144,20 +146,16 @@ def readme(state, day):
         lines += [f'[![{name} — open the project](assets/{asset}.svg)](https://github.com/gmarupilla/{repo})', '']
     lines += ['Also on the workbench: [TrialFlow-Agro](https://github.com/gmarupilla/trialflow-agro), a reproducible workflow for agricultural field trials.', '',
               '[![JOSS Reviews](https://joss.theoj.org/badges/reviewed_by/@gmarupilla)](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)', '',
-              '<sub>Inspired by [Tim Burgan’s community chess](https://github.com/timburgan/timburgan). This garden uses original code and artwork.</sub>', '']
+              '<sub>Inspired by [Tim Burgan’s community chess](https://github.com/timburgan/timburgan). Custom garden code with artwork created using Higgsfield.</sub>', '']
     return '\n'.join(lines)
 
 
 def render(state, day, output):
     assets=output/'assets'
     assets.mkdir(parents=True,exist_ok=True)
-    artwork = draw(state,day)
-    image_version = hashlib.sha256(artwork.encode()).hexdigest()[:12]
-    (assets/'garden.svg').write_text(artwork)
-    versioned_name = f'garden-{image_version}.svg'
-    (assets/versioned_name).write_text(artwork)
+    render_animation(state, day, assets)
     for previous in assets.glob('garden-*.svg'):
-        if re.fullmatch(r'garden-[0-9a-f]{12}\.svg', previous.name) and previous.name != versioned_name:
+        if re.fullmatch(r'garden-[0-9a-f]{12}\.svg', previous.name):
             previous.unlink()
     for filename,name,subtitle,kind in [
         ('agroterraflow','AgroTerraFlow','Agricultural suitability, with uncertainty included.','terrain'),
@@ -188,7 +186,7 @@ td,th{text-align:center;border:1px solid #34433c;padding:8px}.plot{color:#bbd2a9
 <h1>Hey, I’m Akhil. Plant something before you leave.</h1>
 <p>I build scientific software, work with maps and models, and follow the occasional infrastructure rabbit hole.</p>
 <p><a href="https://marupilla.dev">Website ↗</a> · <a href="https://www.linkedin.com/in/gmarupilla">LinkedIn ↗</a> · <a href="https://joss.theoj.org/papers/reviewed_by/@gmarupilla">JOSS reviews ↗</a></p>
-<img src="assets/garden.svg" alt="An example community garden">
+<img src="GARDEN_IMAGE" alt="An example community garden">
 <h2>Leave a little life here</h2><p>Choose an empty plot. Pick a seed in the form, then submit the issue.</p>
 <table><tr><th></th>''']
     page.extend(f'<th>{c}</th>' for c in COLUMNS)
@@ -205,7 +203,8 @@ td,th{text-align:center;border:1px solid #34433c;padding:8px}.plot{color:#bbd2a9
     for repo,asset in [('AgroTerraFlow','agroterraflow'),('yieldcast','yieldcast'),('flashdry','flashdry')]:
         page.append(f'<a href="https://github.com/gmarupilla/{repo}"><img src="assets/{asset}.svg" alt="{escape(repo)} project cover"></a>')
     page.append('<p>Also on the workbench: <a href="https://github.com/gmarupilla/trialflow-agro">TrialFlow-Agro</a>, a reproducible workflow for agricultural field trials.</p><small class="muted">Inspired by Tim Burgan’s community chess. Original code and artwork.</small></main></html>')
-    (output/'index.html').write_text(''.join(page))
+    artwork = next((output/'assets').glob('garden-*.gif')).name
+    (output/'index.html').write_text(''.join(page).replace('GARDEN_IMAGE', 'assets/'+artwork))
 
 
 def main():

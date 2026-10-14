@@ -1,0 +1,25 @@
+{
+  "provider": "Higgsfield MCP",
+  "environment_model": "flux_3_image",
+  "motion_model": "grok_video_v15",
+  "environment_job": "10966eed-e0a6-497d-817b-59a3f18a7e82",
+  "motion_job": "e7ba0b28-38a5-403c-9f5f-d9f744052040",
+  "empty_beds_jobs": [
+    "eb023ad7-0f7e-4014-b916-fcd3585db6fc",
+    "af6f018f-88b0-43d3-b023-6db559357a79"
+  ],
+  "oak_job": "a8463f48-026c-45e9-9a7d-bea9257523e9",
+  "other_plants_job": "d0bd8354-991c-4cf5-befd-0a9d5ec30338",
+  "cutout_jobs": [
+    "023f1141-ac83-41fa-ac39-ce99b426d60b",
+    "1da48ed7-db50-4c27-88af-59beb3fca5ce"
+  ],
+  "composition": "Empty landscape with river motion from the approved loop. Plant PNGs are positioned from the live state, never generated on each update.",
+  "animation": {
+    "width": 960,
+    "height": 640,
+    "frames": 54,
+    "duration_ms": 4500
+  },
+  "font": "DejaVu Sans; see FONT-LICENSE.txt"
+}
