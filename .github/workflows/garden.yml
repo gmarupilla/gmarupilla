@@ -17,7 +17,8 @@ concurrency:
 
 jobs:
   garden:
-    if: github.event_name != 'issues' || github.event.issue.title == 'garden: plant'
+    if: >-
+      github.event_name != 'issues' || github.event.issue.title == 'garden: plant'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
