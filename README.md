@@ -4,7 +4,7 @@ I build scientific software, work with maps and models, and follow the occasiona
 
 [Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)
 
-![A living island garden. Plants in the eight numbered beds reflect the current planting state.](assets/garden-1c02a87d8842.gif)
+![A living island garden. Plants in the eight numbered beds reflect the current planting state.](assets/garden-3478c2d6d12f.gif)
 
 [View the still garden](assets/garden-still.png)
 
@@ -21,7 +21,7 @@ Beds are numbered 1–8. Each bed has six plots: A–C across the back, D–F ac
 | **C** | [＋ C1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C1) | [＋ C2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C2) | [＋ C3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C3) | [＋ C4](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C4) | [＋ C5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C5) | [＋ C6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C6) | [＋ C7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C7) | [＋ C8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=C8) |
 | **D** | [＋ D1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D1) | [＋ D2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D2) | [＋ D3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D3) | Oak | [＋ D5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D5) | [＋ D6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D6) | [＋ D7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D7) | [＋ D8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=D8) |
 | **E** | [＋ E1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=E1) | [＋ E2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=E2) | [＋ E3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=E3) | [＋ E4](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=E4) | [＋ E5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=E5) | [＋ E6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=E6) | [＋ E7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=E7) | [＋ E8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=E8) |
-| **F** | [＋ F1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F1) | [＋ F2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F2) | [＋ F3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F3) | [＋ F4](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F4) | [＋ F5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F5) | [＋ F6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F6) | [＋ F7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F7) | [＋ F8](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F8) |
+| **F** | [＋ F1](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F1) | [＋ F2](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F2) | [＋ F3](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F3) | [＋ F4](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F4) | [＋ F5](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F5) | [＋ F6](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F6) | [＋ F7](https://github.com/gmarupilla/gmarupilla/issues/new?template=plant.yml&plot=F7) | Wheat |
 
 **Seed shelf:** Oak · Pine · Sunflower · Tulip · Mushroom · Wheat
 
@@ -36,9 +36,11 @@ The scene loops continuously. Planting and growth refresh daily and after planti
 |---|---|---|---|
 | A2 | Oak | @gmarupilla | 2026-10-14 |
 | D4 | Oak | @gmarupilla | 2026-10-14 |
+| F8 | Wheat | @gmarupilla | 2026-10-16 |
 
 **Recent requests**
 
+- [#3](https://github.com/gmarupilla/gmarupilla/issues/3): Wheat planted in F8.
 - [#2](https://github.com/gmarupilla/gmarupilla/issues/2): Oak planted in A2.
 - [#1](https://github.com/gmarupilla/gmarupilla/issues/1): Oak planted in D4 during setup; daily allowance restored.
 

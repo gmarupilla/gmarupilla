@@ -10,6 +10,11 @@
       "seed": "Oak",
       "user": "gmarupilla",
       "planted": "2026-10-14"
+    },
+    "F8": {
+      "seed": "Wheat",
+      "user": "gmarupilla",
+      "planted": "2026-10-16"
     }
   },
   "requests": {
@@ -29,13 +34,21 @@
       "plot": "A2",
       "seed": "Oak",
       "reason": "Oak planted in A2."
+    },
+    "3": {
+      "user": "gmarupilla",
+      "date": "2026-10-16",
+      "accepted": true,
+      "plot": "F8",
+      "seed": "Wheat",
+      "reason": "Wheat planted in F8."
     }
   },
   "gardeners": {
-    "gmarupilla": 2
+    "gmarupilla": 3
   },
   "last_planted": {
-    "gmarupilla": "2026-10-14"
+    "gmarupilla": "2026-10-16"
   },
   "composted": 0
 }
