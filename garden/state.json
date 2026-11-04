@@ -1,16 +1,6 @@
 {
   "version": 1,
   "plots": {
-    "D4": {
-      "seed": "Oak",
-      "user": "gmarupilla",
-      "planted": "2026-10-14"
-    },
-    "A2": {
-      "seed": "Oak",
-      "user": "gmarupilla",
-      "planted": "2026-10-14"
-    },
     "F8": {
       "seed": "Wheat",
       "user": "gmarupilla",
@@ -50,5 +40,5 @@
   "last_planted": {
     "gmarupilla": "2026-10-16"
   },
-  "composted": 0
+  "composted": 2
 }
