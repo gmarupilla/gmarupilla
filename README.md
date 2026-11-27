@@ -4,7 +4,7 @@ I build scientific software, work with maps and models, and follow the occasiona
 
 [Website ↗](https://marupilla.dev) · [LinkedIn ↗](https://www.linkedin.com/in/gmarupilla) · [JOSS reviews ↗](https://joss.theoj.org/papers/reviewed_by/@gmarupilla)
 
-![A living island garden. Plants in the eight numbered beds reflect the current planting state.](assets/garden-a8bbf222b12d.gif)
+![A living island garden. Plants in the eight numbered beds reflect the current planting state.](assets/garden-1b79b1f26613.gif)
 
 [View the still garden](assets/garden-still.png)
 
